@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { db } from '../firebase';
 import { collection, addDoc, serverTimestamp } from 'firebase/firestore';
+import { submitToGoogleSheet } from '../googleSheets';
 import { CheckCircle, Loader2, Heart, Sparkles } from 'lucide-react';
 
 export const RSVPForm: React.FC = () => {
@@ -15,16 +16,32 @@ export const RSVPForm: React.FC = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setStatus('loading');
+
+    const normalizedGuests = parseInt(formData.guests, 10);
+
     try {
-      await addDoc(collection(db, 'rsvps'), {
-        ...formData,
-        guests: parseInt(formData.guests),
-        createdAt: serverTimestamp(),
+      await submitToGoogleSheet('rsvp', {
+        fullName: formData.fullName,
+        guests: normalizedGuests,
+        dietaryNotes: formData.dietaryNotes,
+        submittedAt: new Date().toISOString(),
       });
+
+      // Keep Firestore write as a secondary save without blocking sheet success.
+      try {
+        await addDoc(collection(db, 'rsvps'), {
+          ...formData,
+          guests: normalizedGuests,
+          createdAt: serverTimestamp(),
+        });
+      } catch (firestoreError) {
+        console.warn('Firestore RSVP backup failed:', firestoreError);
+      }
+
       setStatus('success');
       setFormData({ fullName: '', guests: '1', dietaryNotes: '' });
     } catch (error) {
-      console.error('Error adding RSVP: ', error);
+      console.error('Error sending RSVP to Google Sheets: ', error);
       setStatus('error');
     }
   };

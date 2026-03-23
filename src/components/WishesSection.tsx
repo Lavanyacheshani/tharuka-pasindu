@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { db } from '../firebase';
 import { collection, addDoc, query, orderBy, onSnapshot, serverTimestamp } from 'firebase/firestore';
+import { submitToGoogleSheet } from '../googleSheets';
 import { Send, Loader2, Sparkles } from 'lucide-react';
 import { formatDistanceToNow } from 'date-fns';
 
@@ -33,14 +34,27 @@ export const WishesSection: React.FC = () => {
     e.preventDefault();
     if (!formData.name || !formData.message) return;
     setIsSubmitting(true);
+
     try {
-      await addDoc(collection(db, 'wishes'), {
-        ...formData,
-        createdAt: serverTimestamp(),
+      await submitToGoogleSheet('wish', {
+        name: formData.name,
+        message: formData.message,
+        submittedAt: new Date().toISOString(),
       });
+
+      // Keep Firestore write as a secondary mirror for live on-page wish rendering.
+      try {
+        await addDoc(collection(db, 'wishes'), {
+          ...formData,
+          createdAt: serverTimestamp(),
+        });
+      } catch (firestoreError) {
+        console.warn('Firestore wish mirror failed:', firestoreError);
+      }
+
       setFormData({ name: '', message: '' });
     } catch (error) {
-      console.error('Error adding wish: ', error);
+      console.error('Error sending wish to Google Sheets: ', error);
     } finally {
       setIsSubmitting(false);
     }
