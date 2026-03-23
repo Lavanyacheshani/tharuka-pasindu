@@ -27,18 +27,18 @@ export const CoupleDetails: React.FC = () => {
       </div>
 
       <div className="flex flex-col lg:flex-row items-center justify-center gap-12 lg:gap-8 relative z-10">
-        {/* Groom Details (Left on Desktop, Below Image on Mobile) */}
+        {/* Groom Details (Left on Desktop, Bottom on Mobile) */}
         <motion.div
           initial={{ opacity: 0, x: -30 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
-          className="text-center lg:text-right flex-1 lg:pr-10 order-2 lg:order-1"
+          className="text-center lg:text-right flex-1 lg:pr-10 order-4 lg:order-1"
         >
           <div className="mb-4 flex flex-col items-center lg:items-end">
              <span className="text-brand-sakura-deep uppercase tracking-[0.4em] text-[10px] font-bold mb-3 block">The Groom</span>
              <h3 className="text-4xl sm:text-5xl font-display text-stone-800 mb-2 drop-shadow-sm">Dinindu</h3>
-             <p className="text-stone-500/90 font-serif italic text-base sm:text-lg">Son of Mr. & Mrs. Chandrarathna</p>
+             <p className="text-stone-500/90 font-serif italic text-base sm:text-lg">Son of Mr. T. A. Chandrarathna</p>
           </div>
           <div className="hidden lg:flex justify-end mt-8">
             <Heart className="w-6 h-6 text-brand-sakura/60 fill-brand-sakura/20 transform hover:scale-110 transition-transform cursor-pointer" />
@@ -76,7 +76,7 @@ export const CoupleDetails: React.FC = () => {
           <Sparkles className="absolute bottom-10 -right-4 w-6 h-6 text-[#ffb3c6] animate-pulse delay-300 drop-shadow-sm z-20" />
         </motion.div>
 
-        {/* Mobile divider between groom and bride */}
+        {/* Mobile divider between image and groom */}
         <div className="lg:hidden order-3 w-full flex justify-center py-4 opacity-50">
           <div className="w-1/2 h-px bg-gradient-to-r from-transparent via-brand-sakura-deep/40 to-transparent" />
         </div>
@@ -87,12 +87,12 @@ export const CoupleDetails: React.FC = () => {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 1, ease: "easeOut", delay: 0.4 }}
-          className="text-center lg:text-left flex-1 lg:pl-10 order-4 lg:order-3"
+          className="text-center lg:text-left flex-1 lg:pl-10 order-2 lg:order-3"
         >
           <div className="mb-4 flex flex-col items-center lg:items-start">
              <span className="text-brand-sakura-deep uppercase tracking-[0.4em] text-[10px] font-bold mb-3 block">The Bride</span>
              <h3 className="text-4xl sm:text-5xl font-display text-stone-800 mb-2 drop-shadow-sm">Dimalka</h3>
-             <p className="text-stone-500/90 font-serif italic text-base sm:text-lg">Daughter of Mr. & Mrs. Weerakoon</p>
+             <p className="text-stone-500/90 font-serif italic text-base sm:text-lg">Daughter of Mr. W. M. K. B. Weerakoon</p>
           </div>
           <div className="hidden lg:flex justify-start mt-8">
             <Heart className="w-6 h-6 text-brand-sakura/60 fill-brand-sakura/20 transform hover:scale-110 transition-transform cursor-pointer" />

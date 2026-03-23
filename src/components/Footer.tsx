@@ -44,6 +44,27 @@ export const Footer: React.FC = () => {
 
         <div className="w-full h-[1px] bg-gradient-to-r from-transparent via-brand-sakura/50 to-transparent mb-12" />
 
+        <div className="max-w-xl mx-auto mb-12 rounded-3xl border border-brand-sakura/30 bg-brand-champagne/60 px-6 py-7 sm:px-8 text-center">
+          <h3 className="text-xl sm:text-2xl font-display text-stone-800 mb-2">Contact More Details</h3>
+          <p className="text-xs sm:text-sm uppercase tracking-[0.22em] text-brand-sakura-deep font-semibold mb-4">Groom</p>
+          <div className="flex flex-col gap-2 text-sm sm:text-base text-stone-700">
+            <a
+              href="tel:+821072899804"
+              className="hover:text-brand-sakura-deep transition-colors"
+              aria-label="Call groom"
+            >
+              +82 10 7289 9804
+            </a>
+            <a
+              href="mailto:dinidulakshan648@gmail.com"
+              className="hover:text-brand-sakura-deep transition-colors break-all"
+              aria-label="Email groom"
+            >
+              dinidulakshan648@gmail.com
+            </a>
+          </div>
+        </div>
+
         <div className="flex flex-col items-center justify-center gap-4">
           <div className="text-[10px] sm:text-xs text-stone-400 font-bold uppercase tracking-[0.3em]">
             With all our love 💕
