@@ -4,7 +4,7 @@
 
 This project now sends form submissions to Google Sheets through Google Apps Script.
 
-### Connected Forms
+### Connected Forms.
 
 1. RSVP form writes to sheet: `rsvp`
 2. Blessings/Wishes form writes to sheet: `wish`
