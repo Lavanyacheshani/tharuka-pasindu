@@ -22,7 +22,7 @@ export const Footer: React.FC = () => {
             <path id="circlePath" d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0" fill="transparent" />
             <text>
               <textPath href="#circlePath" className="text-[9.5px] uppercase tracking-[0.2em] fill-brand-sakura-deep font-sans font-bold">
-                DIMALKA & DININDU • FOREVER AND ALWAYS • 
+                DEWMI & CHARUKA • FOREVER AND ALWAYS • 
               </textPath>
             </text>
           </svg>
@@ -37,7 +37,7 @@ export const Footer: React.FC = () => {
           <div className="absolute inset-0 bg-brand-sakura/20 rounded-full blur-2xl pointer-events-none group-hover:bg-brand-sakura-deep/30 transition-colors duration-700 -z-10" />
         </div>
 
-        <h2 className="text-4xl sm:text-5xl font-display text-stone-800 mb-6 tracking-tight drop-shadow-sm">Dimalka & Dinindu</h2>
+        <h2 className="text-4xl sm:text-5xl font-display text-stone-800 mb-6 tracking-tight drop-shadow-sm">Dewmi & Charuka</h2>
         <p className="text-stone-500 font-serif italic text-lg sm:text-xl leading-relaxed max-w-2xl mx-auto mb-16">
           "A journey of a thousand miles begins with a single step, and we're so incredibly happy to take it together."
         </p>
@@ -49,18 +49,18 @@ export const Footer: React.FC = () => {
           <p className="text-xs sm:text-sm uppercase tracking-[0.22em] text-brand-sakura-deep font-semibold mb-4">Groom</p>
           <div className="flex flex-col gap-2 text-sm sm:text-base text-stone-700">
             <a
-              href="tel:+821072899804"
+              href="tel:+94771234567"
               className="hover:text-brand-sakura-deep transition-colors"
               aria-label="Call groom"
             >
-              +82 10 7289 9804
+              +94 77 123 4567
             </a>
             <a
-              href="mailto:dinidulakshan648@gmail.com"
+              href="mailto:charukawedding@example.com"
               className="hover:text-brand-sakura-deep transition-colors break-all"
               aria-label="Email groom"
             >
-              dinidulakshan648@gmail.com
+              charukawedding@example.com
             </a>
           </div>
         </div>
@@ -70,7 +70,7 @@ export const Footer: React.FC = () => {
             With all our love 💕
           </div>
           <div className="text-[9px] text-stone-300 tracking-widest uppercase font-medium">
-            © 2026 Dimalka & Dinindu Wedding
+            © 2026 Dewmi & Charuka Wedding
           </div>
         </div>
       </div>
