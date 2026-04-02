@@ -4,8 +4,8 @@ import { MapPin, Navigation, Compass, Map } from 'lucide-react';
 
 export const Location: React.FC = () => {
   const venueAddress = "The Kingsbury Hotel, Colombo, Sri Lanka";
-  const mapUrl = `https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15822.464624388344!2d80.4431!3d7.4357!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNyAyNicwOC41Ik4gODDCsDI2JzM1LjIiRQ!5e0!3m2!1sen!2slk!4v1711000000000!5m2!1sen!2slk`;
-  const liveLocationUrl = "https://maps.app.goo.gl/opEGbn7MzBmo44j76";
+  const mapUrl = `https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3960.774438992095!2d79.84074217506979!3d6.917409293077303!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae2596131c9444d%3A0x28972e70335e9858!2sThe%20Kingsbury%20Colombo!5e0!3m2!1sen!2slk!4v1714734892348!5m2!1sen!2slk`;
+  const liveLocationUrl = "https://maps.app.goo.gl/yQVQ2S2jDXZAznYQ8";
 
   return (
     <div className="max-w-[85rem] mx-auto px-6 relative py-12">
@@ -85,7 +85,7 @@ export const Location: React.FC = () => {
             <div className="absolute inset-0 bg-brand-sakura/10 mix-blend-multiply pointer-events-none z-20 group-hover/map:opacity-0 transition-opacity duration-1000" />
 
             <iframe
-              title="Kshatriya Villa Location"
+              title="The Kingsbury Location"
               src={mapUrl}
               width="100%"
               height="100%"

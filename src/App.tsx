@@ -11,7 +11,6 @@ import { CoupleDetails } from './components/CoupleDetails';
 import { Gallery } from './components/Gallery';
 import { Location } from './components/Location';
 import { RSVPForm } from './components/RSVPForm';
-import { WishesSection } from './components/WishesSection';
 import { Footer } from './components/Footer';
 
 export default function App() {
@@ -114,10 +113,6 @@ export default function App() {
             <section id="rsvp" className="py-16 sm:py-32 bg-brand-ivory relative">
               <div className="absolute top-0 left-0 w-full h-full bg-[url('https://www.transparenttextures.com/patterns/natural-paper.png')] opacity-20 pointer-events-none" />
               <RSVPForm />
-            </section>
-
-            <section id="wishes" className="py-16 sm:py-32 bg-white">
-              <WishesSection />
             </section>
 
             <Footer />
