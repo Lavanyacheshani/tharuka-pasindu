@@ -42,7 +42,7 @@ export const CeremonyDetails: React.FC = () => {
                   <Calendar className="w-5 h-5 text-brand-sakura-deep group-hover:scale-110 transition-transform duration-500" />
                 </div>
                 <div>
-                  <h4 className="font-serif text-2xl sm:text-3xl text-stone-800 mb-2 group-hover:text-brand-sakura-deep transition-colors duration-500">Thursday, August 20</h4>
+                  <h4 className="font-serif text-2xl sm:text-3xl text-stone-800 mb-2 group-hover:text-brand-sakura-deep transition-colors duration-500">Thursday, May 21</h4>
                   <p className="text-stone-500/80 text-[10px] sm:text-[11px] uppercase tracking-[0.3em] font-bold">The Year Two Thousand Twenty Six</p>
                 </div>
               </div>
@@ -53,8 +53,8 @@ export const CeremonyDetails: React.FC = () => {
                   <Clock className="w-5 h-5 text-brand-sakura-deep group-hover:scale-110 transition-transform duration-500" />
                 </div>
                 <div>
-                  <h4 className="font-serif text-2xl sm:text-3xl text-stone-800 mb-2 group-hover:text-brand-sakura-deep transition-colors duration-500">09:51 AM - 10:30 AM</h4>
-                  <p className="text-stone-500/80 text-[10px] sm:text-[11px] uppercase tracking-[0.3em] font-bold">Poruwa Ceremony</p>
+                  <h4 className="font-serif text-2xl sm:text-3xl text-stone-800 mb-2 group-hover:text-brand-sakura-deep transition-colors duration-500">08:15 AM - 04:00 PM</h4>
+                  <p className="text-stone-500/80 text-[10px] sm:text-[11px] uppercase tracking-[0.3em] font-bold">Wedding Ceremony & Reception</p>
                 </div>
               </div>
 
@@ -64,61 +64,41 @@ export const CeremonyDetails: React.FC = () => {
                   <MapPin className="w-5 h-5 text-brand-sakura-deep group-hover:scale-110 transition-transform duration-500" />
                 </div>
                 <div>
-                  <h4 className="font-serif text-2xl sm:text-3xl text-stone-800 mb-2 group-hover:text-brand-sakura-deep transition-colors duration-500">The Kingsbury Hotel</h4>
-                  <p className="text-stone-500/80 text-[10px] sm:text-[11px] uppercase tracking-[0.3em] font-bold">Colombo, Sri Lanka</p>
+                  <h4 className="font-serif text-2xl sm:text-3xl text-stone-800 mb-2 group-hover:text-brand-sakura-deep transition-colors duration-500">Pubudu Villa Reception Hall</h4>
+                  <p className="text-stone-500/80 text-[10px] sm:text-[11px] uppercase tracking-[0.3em] font-bold">Piliyandala, Sri Lanka</p>
                 </div>
               </div>
             </div>
           </motion.div>
         </div>
 
-        {/* Right Side: Visual Composition */}
-        <div className="lg:w-1/2 w-full relative mt-16 lg:mt-0">
+        {/* Right Side: Visual Composition (Image removed as requested) */}
+        <div className="lg:w-1/2 w-full relative mt-16 lg:mt-0 flex items-center justify-center">
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 1.2, ease: "easeOut" }}
-            className="relative"
+            className="relative w-full max-w-md aspect-[4/5] flex items-center justify-center bg-white/40 rounded-[3rem] border border-white/60 shadow-xl overflow-hidden"
           >
-            {/* Artistic Background Frame */}
-            <div className="absolute -inset-4 sm:-inset-6 border-[2px] border-brand-sakura/30 rounded-[2rem] sm:rounded-[3rem] -z-10 translate-x-4 sm:translate-x-8 translate-y-4 sm:translate-y-8" />
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-brand-champagne/40 rounded-[2rem] sm:rounded-[3rem] blur-2xl -z-20" />
-
-            {/* Main Creative Image Frame */}
-            <div className="relative aspect-[3/4] sm:aspect-[4/5] rounded-[2rem] sm:rounded-[3rem] overflow-hidden border-[6px] sm:border-[8px] border-white shadow-[0_20px_50px_rgba(251,113,133,0.2)] bg-white group">
-              <img
-                src="/12.jpg"
-                onError={(e) => {
-                  e.currentTarget.src = "https://images.unsplash.com/photo-1519225421980-715cb02151ff?auto=format&fit=crop&q=80&w=800&h=1000";
-                  e.currentTarget.onerror = null;
-                }}
-                alt="Ceremony Venue"
-                className="w-full h-full object-cover transition-transform duration-[2s] ease-out group-hover:scale-[1.03]"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/20 via-transparent to-black/5 pointer-events-none mix-blend-overlay opacity-opacity-70 group-hover:opacity-100 transition-opacity duration-1000" />
+            {/* Artistic Decoration instead of image */}
+            <div className="absolute inset-0 bg-gradient-to-br from-brand-sakura/10 via-transparent to-brand-sakura-deep/10" />
+            <div className="relative text-center p-12">
+               <Heart className="w-24 h-24 text-brand-sakura/40 fill-brand-sakura/5 mx-auto mb-8 animate-pulse" />
+               <h4 className="font-display text-4xl text-stone-800 mb-4 tracking-tight">The Reception</h4>
+               <p className="text-stone-500/90 font-serif text-lg leading-relaxed">
+                 Followed by a celebratory lunch and festivities at the Pubudu Villa Reception Hall.
+               </p>
             </div>
 
-            {/* Premium Floating Card */}
             <motion.div
               initial={{ opacity: 0, x: -30, y: 30 }}
               whileInView={{ opacity: 1, x: 0, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.6, duration: 1, ease: "easeOut" }}
-              className="absolute -bottom-6 sm:-bottom-16 -left-2 sm:-left-16 bg-white/85 backdrop-blur-xl p-4 sm:p-10 shadow-[0_30px_60px_rgba(251,113,133,0.15)] rounded-2xl max-w-[200px] sm:max-w-[340px] border border-white"
+              className="absolute -bottom-6 -left-6 bg-white/85 backdrop-blur-xl p-8 shadow-[0_30px_60px_rgba(251,113,133,0.15)] rounded-2xl border border-white"
             >
-              <div className="absolute inset-x-8 -top-px h-[2px] bg-gradient-to-r from-transparent via-brand-sakura-deep/60 to-transparent" />
-              <div className="relative">
-                <Heart className="text-brand-sakura-deep w-6 h-6 sm:w-10 sm:h-10 mb-2 sm:mb-5 fill-brand-sakura/20 drop-shadow-sm" />
-                <Sparkles className="absolute top-0 right-10 w-3 h-3 sm:w-4 sm:h-4 text-brand-sakura-deep animate-pulse" />
-              </div>
-              <h4 className="font-display text-xl sm:text-4xl text-stone-800 mb-1 sm:mb-3 tracking-tight">The Reception</h4>
-              <p className="text-stone-500/90 font-serif text-[11px] sm:text-[16px] leading-snug sm:leading-relaxed mb-3 sm:mb-6">
-                Followed by a celebratory lunch and afternoon festivities in the Grand Ballroom.
-              </p>
-              <div className="inline-block px-3 sm:px-5 py-1.5 sm:py-2.5 bg-brand-champagne rounded-full border border-brand-sakura/30 shadow-sm">
-                <span className="text-brand-sakura-deep font-sans font-bold tracking-[0.1em] sm:tracking-[0.2em] text-[8px] sm:text-[11px] uppercase block drop-shadow-sm">11:00 AM Onwards</span>
-              </div>
+              <span className="text-brand-sakura-deep font-sans font-bold tracking-[0.2em] text-[11px] uppercase block drop-shadow-sm">Since 08:15 AM</span>
             </motion.div>
 
             {/* Decorative Floating Circles */}

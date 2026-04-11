@@ -21,78 +21,57 @@ export const CoupleDetails: React.FC = () => {
             <div className="w-12 sm:w-20 h-[1px] bg-gradient-to-l from-transparent to-brand-sakura-deep/60" />
           </div>
           <h2 className="text-5xl sm:text-7xl font-display text-stone-800 tracking-tight drop-shadow-sm">
-            Dewmi <span className="italic text-brand-sakura-deep font-light mx-2">&</span> Charuka
+            Tharuka <span className="italic text-brand-sakura-deep font-light mx-2">&</span> Pasindu
           </h2>
         </motion.div>
       </div>
 
       <div className="flex flex-col lg:flex-row items-center justify-center gap-12 lg:gap-8 relative z-10">
-        {/* Groom Details (Left on Desktop, Bottom on Mobile) */}
+        {/* Groom Details */}
         <motion.div
           initial={{ opacity: 0, x: -30 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
-          className="text-center lg:text-right flex-1 lg:pr-10 order-4 lg:order-1"
+          className="text-center lg:text-right flex-1 lg:pr-10"
         >
           <div className="mb-4 flex flex-col items-center lg:items-end">
             <span className="text-brand-sakura-deep uppercase tracking-[0.4em] text-[10px] font-bold mb-3 block">The Groom</span>
-            <h3 className="text-4xl sm:text-5xl font-display text-stone-800 mb-2 drop-shadow-sm">Charuka</h3>
-            <p className="text-stone-500/90 font-serif italic text-base sm:text-lg">Son of Mr. & Mrs. Perera</p>
+            <h3 className="text-4xl sm:text-5xl font-display text-stone-800 mb-2 drop-shadow-sm">Pasindu</h3>
+            <p className="text-stone-500/90 font-serif italic text-base sm:text-lg">Son of Mr. Gamage & Miss Gamage</p>
           </div>
           <div className="hidden lg:flex justify-end mt-8">
             <Heart className="w-6 h-6 text-brand-sakura/60 fill-brand-sakura/20 transform hover:scale-110 transition-transform cursor-pointer" />
           </div>
         </motion.div>
 
-        {/* Center Couple Image (Arch Design) */}
+        {/* Decorative Center (Image removed as requested) */}
         <motion.div
-          initial={{ opacity: 0, scale: 0.95, y: 20 }}
-          whileInView={{ opacity: 1, scale: 1, y: 0 }}
+          initial={{ opacity: 0, scale: 0.95 }}
+          whileInView={{ opacity: 1, scale: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 1.2, ease: "easeOut" }}
-          className="relative px-4 sm:px-0 order-1 lg:order-2 flex-shrink-0 group"
+          className="relative px-4 sm:px-0 flex-shrink-0 group flex items-center justify-center py-10"
         >
-          {/* Glowing border effect */}
-          <div className="absolute -inset-2 bg-gradient-to-b from-brand-sakura-deep/30 to-transparent rounded-[12rem_12rem_1rem_1rem] blur-xl opacity-60 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none" />
-
-          <div className="relative w-[300px] h-[400px] sm:w-[360px] sm:h-[500px] lg:w-[420px] lg:h-[580px] rounded-[12rem_12rem_16px_16px] overflow-hidden border-[6px] border-white/90 shadow-[0_20px_50px_rgba(251,113,133,0.2)] bg-brand-champagne mx-auto z-10 transition-transform duration-700 group-hover:-translate-y-2">
-            <img
-              src="/17.jpg"
-              onError={(e) => {
-                e.currentTarget.src = "https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&q=80&w=800&h=1000";
-                e.currentTarget.onerror = null;
-              }}
-              alt="Dewmi and Charuka"
-              className="w-full h-full object-cover transition-transform duration-[1.5s] ease-out group-hover:scale-105"
-            />
-            {/* Elegant inner shadow & overlay */}
-            <div className="absolute inset-0 shadow-[inset_0_0_40px_rgba(0,0,0,0.1)] pointer-events-none" />
-            <div className="absolute inset-x-0 bottom-0 h-1/3 bg-gradient-to-t from-brand-sakura-deep/30 to-transparent pointer-events-none mix-blend-overlay" />
+          <div className="relative w-40 h-40 flex items-center justify-center">
+            <div className="absolute inset-0 bg-gradient-to-b from-brand-sakura-deep/20 to-transparent rounded-full blur-2xl opacity-60" />
+            <Heart className="w-20 h-20 text-brand-sakura-deep/40 fill-brand-sakura/10 animate-pulse" />
+            <Sparkles className="absolute top-0 left-0 w-8 h-8 text-brand-sakura-deep animate-pulse" />
           </div>
-
-          {/* Floating Sparkles decoration */}
-          <Sparkles className="absolute top-8 left-0 w-8 h-8 text-brand-sakura-deep animate-pulse drop-shadow-sm z-20" />
-          <Sparkles className="absolute bottom-10 -right-4 w-6 h-6 text-[#ffb3c6] animate-pulse delay-300 drop-shadow-sm z-20" />
         </motion.div>
 
-        {/* Mobile divider between image and groom */}
-        <div className="lg:hidden order-3 w-full flex justify-center py-4 opacity-50">
-          <div className="w-1/2 h-px bg-gradient-to-r from-transparent via-brand-sakura-deep/40 to-transparent" />
-        </div>
-
-        {/* Bride Details (Right) */}
+        {/* Bride Details */}
         <motion.div
           initial={{ opacity: 0, x: 30 }}
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 1, ease: "easeOut", delay: 0.4 }}
-          className="text-center lg:text-left flex-1 lg:pl-10 order-2 lg:order-3"
+          className="text-center lg:text-left flex-1 lg:pl-10"
         >
           <div className="mb-4 flex flex-col items-center lg:items-start">
             <span className="text-brand-sakura-deep uppercase tracking-[0.4em] text-[10px] font-bold mb-3 block">The Bride</span>
-            <h3 className="text-4xl sm:text-5xl font-display text-stone-800 mb-2 drop-shadow-sm">Dewmi</h3>
-            <p className="text-stone-500/90 font-serif italic text-base sm:text-lg">Daughter of Mr. & Mrs. Silva</p>
+            <h3 className="text-4xl sm:text-5xl font-display text-stone-800 mb-2 drop-shadow-sm">Tharuka</h3>
+            <p className="text-stone-500/90 font-serif italic text-base sm:text-lg">Daughter of Mr. Wijethunga & Miss Wijethunga</p>
           </div>
           <div className="hidden lg:flex justify-start mt-8">
             <Heart className="w-6 h-6 text-brand-sakura/60 fill-brand-sakura/20 transform hover:scale-110 transition-transform cursor-pointer" />

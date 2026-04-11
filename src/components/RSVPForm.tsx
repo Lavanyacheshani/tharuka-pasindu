@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import { db } from '../firebase';
-import { collection, addDoc, serverTimestamp } from 'firebase/firestore';
 import { submitToGoogleSheet } from '../googleSheets';
 import { CheckCircle, Loader2, Heart, Sparkles } from 'lucide-react';
 
@@ -26,17 +24,6 @@ export const RSVPForm: React.FC = () => {
         dietaryNotes: formData.dietaryNotes,
         submittedAt: new Date().toISOString(),
       });
-
-      // Keep Firestore write as a secondary save without blocking sheet success.
-      try {
-        await addDoc(collection(db, 'rsvps'), {
-          ...formData,
-          guests: normalizedGuests,
-          createdAt: serverTimestamp(),
-        });
-      } catch (firestoreError) {
-        console.warn('Firestore RSVP backup failed:', firestoreError);
-      }
 
       setStatus('success');
       setFormData({ fullName: '', guests: '1', dietaryNotes: '' });

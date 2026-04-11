@@ -8,7 +8,6 @@ import { Countdown } from './components/Countdown';
 import { CeremonyDetails } from './components/CeremonyDetails';
 import { CoupleDetails } from './components/CoupleDetails';
 // Removed Timeline import
-import { Gallery } from './components/Gallery';
 import { Location } from './components/Location';
 import { RSVPForm } from './components/RSVPForm';
 import { Footer } from './components/Footer';
@@ -18,7 +17,7 @@ export default function App() {
   const [isMusicPlaying, setIsMusicPlaying] = useState(false);
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
-  const weddingDate = new Date('2026-08-20T09:51:00');
+  const weddingDate = new Date('2026-05-21T08:15:00');
 
   const toggleMusic = () => {
     if (audioRef.current) {
@@ -101,10 +100,6 @@ export default function App() {
             </section>
 
             {/* Timeline section removed entirely as requested */}
-
-            <section id="gallery" className="py-16 sm:py-32 bg-brand-ivory">
-              <Gallery />
-            </section>
 
             <section id="location" className="py-16 sm:py-32 bg-white">
               <Location />
