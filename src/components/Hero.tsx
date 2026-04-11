@@ -47,26 +47,35 @@ export const Hero: React.FC = () => {
           </div>
 
           <span className="text-brand-sakura-deep uppercase tracking-[0.4em] sm:tracking-[0.6em] text-xs sm:text-sm font-medium mb-6 sm:mb-10 block drop-shadow-sm font-sans">
-            The Celebration of Love
+            The Celebration of Love | ආදරණීය විවාහ මංගලෝත්සවය
           </span>
 
           <div className="relative mb-8 sm:mb-12 w-full flex justify-center">
             {/* Soft glow behind text for contrast and magical feel */}
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[140%] bg-white/40 blur-[50px] sm:blur-[80px] rounded-full pointer-events-none" />
 
-            <h1 className="relative text-6xl sm:text-[7rem] lg:text-[9.5rem] font-display text-stone-800 leading-[1.1] sm:leading-[0.9] drop-shadow-sm">
-              Tharuka <br className="sm:hidden" />
-              <span className="text-brand-sakura-deep italic font-light mx-2 sm:mx-6 text-5xl sm:text-[6rem] lg:text-[8rem] inline-block -translate-y-2 sm:-translate-y-6">&</span>
-              <br className="sm:hidden" />
-              Pasindu
+            <h1 className="relative text-6xl sm:text-[7rem] lg:text-[9.5rem] font-display text-stone-800 leading-[1.1] sm:leading-[0.9] drop-shadow-sm flex flex-col items-center">
+              <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-6">
+                 <span>Tharuka</span>
+                 <span className="text-brand-sakura-deep italic font-light text-5xl sm:text-[6rem] lg:text-[8rem] inline-block">&</span>
+                 <span>Pasindu</span>
+              </div>
+              <div className="text-3xl sm:text-5xl lg:text-6xl font-sinhala text-stone-800 tracking-tight mt-4 sm:mt-8">
+                තාරුක <span className="text-brand-sakura-deep italic font-light mx-2">&</span> පසිඳු
+              </div>
             </h1>
           </div>
 
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-6 mb-12 sm:mb-16">
+          <div className="flex flex-col items-center justify-center gap-4 sm:gap-6 mb-12 sm:mb-16">
             <div className="hidden sm:block h-[1px] w-20 bg-gradient-to-r from-transparent to-brand-sakura-deep/40" />
-            <p className="text-[1.1rem] sm:text-2xl font-serif italic text-stone-700 tracking-wide px-4 text-center max-w-xl leading-relaxed drop-shadow-[0_2px_4px_rgba(255,255,255,0.5)]">
-              Together with our families, we joyfully invite you to join us
-            </p>
+            <div className="px-4 text-center max-w-xl space-y-4">
+              <p className="text-[1.1rem] sm:text-2xl font-serif italic text-stone-700 tracking-wide leading-relaxed drop-shadow-[0_1px_2px_rgba(255,255,255,0.5)]">
+                Together with our families, we joyfully invite you to join us
+              </p>
+              <p className="text-lg sm:text-xl font-sinhala text-stone-600 leading-relaxed">
+                අපගේ පවුල් වල සාමාජිකයින් සමඟ එක්ව, අපගේ විවාහ මංගලෝත්සවය සඳහා අප ඔබව මහත් ප්‍රීතියෙන් යුතුව පිළිගන්නෙමු.
+              </p>
+            </div>
             <div className="hidden sm:block h-[1px] w-20 bg-gradient-to-l from-transparent to-brand-sakura-deep/40" />
           </div>
 

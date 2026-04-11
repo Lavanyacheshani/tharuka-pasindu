@@ -20,8 +20,9 @@ export const CoupleDetails: React.FC = () => {
             <span className="text-brand-sakura-deep uppercase tracking-[0.5em] text-[11px] font-semibold font-sans drop-shadow-sm">The Protagonists</span>
             <div className="w-12 sm:w-20 h-[1px] bg-gradient-to-l from-transparent to-brand-sakura-deep/60" />
           </div>
-          <h2 className="text-5xl sm:text-7xl font-display text-stone-800 tracking-tight drop-shadow-sm">
-            Tharuka <span className="italic text-brand-sakura-deep font-light mx-2">&</span> Pasindu
+          <h2 className="text-5xl sm:text-7xl font-display text-stone-800 tracking-tight drop-shadow-sm flex flex-col items-center gap-4">
+            <span>Tharuka <span className="italic text-brand-sakura-deep font-light mx-2">&</span> Pasindu</span>
+            <span className="text-3xl sm:text-5xl font-sinhala">තාරුක <span className="italic text-brand-sakura-deep font-light mx-2">&</span> පසිඳු</span>
           </h2>
         </motion.div>
       </div>
@@ -36,9 +37,15 @@ export const CoupleDetails: React.FC = () => {
           className="text-center lg:text-right flex-1 lg:pr-10"
         >
           <div className="mb-4 flex flex-col items-center lg:items-end">
-            <span className="text-brand-sakura-deep uppercase tracking-[0.4em] text-[10px] font-bold mb-3 block">The Groom</span>
-            <h3 className="text-4xl sm:text-5xl font-display text-stone-800 mb-2 drop-shadow-sm">Pasindu</h3>
-            <p className="text-stone-500/90 font-serif italic text-base sm:text-lg">Son of Mr. Gamage & Miss Gamage</p>
+            <span className="text-brand-sakura-deep uppercase tracking-[0.4em] text-[10px] font-bold mb-3 block">The Groom | මනාලයා</span>
+            <h3 className="text-4xl sm:text-5xl font-display text-stone-800 mb-2 drop-shadow-sm flex flex-col items-center lg:items-end gap-2">
+              <span>Pasindu</span>
+              <span className="text-2xl sm:text-3xl font-sinhala">පසිඳු</span>
+            </h3>
+            <div className="text-stone-500/90 font-serif italic text-base sm:text-lg flex flex-col items-center lg:items-end gap-1">
+              <span>Son of Mr. Gamage & Miss Gamage</span>
+              <span className="text-sm sm:text-base font-sinhala not-italic">ගමගේ මහතාගේ සහ මහත්මියගේ පුතණුන්</span>
+            </div>
           </div>
           <div className="hidden lg:flex justify-end mt-8">
             <Heart className="w-6 h-6 text-brand-sakura/60 fill-brand-sakura/20 transform hover:scale-110 transition-transform cursor-pointer" />
@@ -69,9 +76,15 @@ export const CoupleDetails: React.FC = () => {
           className="text-center lg:text-left flex-1 lg:pl-10"
         >
           <div className="mb-4 flex flex-col items-center lg:items-start">
-            <span className="text-brand-sakura-deep uppercase tracking-[0.4em] text-[10px] font-bold mb-3 block">The Bride</span>
-            <h3 className="text-4xl sm:text-5xl font-display text-stone-800 mb-2 drop-shadow-sm">Tharuka</h3>
-            <p className="text-stone-500/90 font-serif italic text-base sm:text-lg">Daughter of Mr. Wijethunga & Miss Wijethunga</p>
+            <span className="text-brand-sakura-deep uppercase tracking-[0.4em] text-[10px] font-bold mb-3 block">The Bride | මනාලිය</span>
+            <h3 className="text-4xl sm:text-5xl font-display text-stone-800 mb-2 drop-shadow-sm flex flex-col items-center lg:items-start gap-2">
+              <span>Tharuka</span>
+              <span className="text-2xl sm:text-3xl font-sinhala">තාරුක</span>
+            </h3>
+            <div className="text-stone-500/90 font-serif italic text-base sm:text-lg flex flex-col items-center lg:items-start gap-1">
+              <span>Daughter of Mr. Wijethunga & Miss Wijethunga</span>
+              <span className="text-sm sm:text-base font-sinhala not-italic">විජේතුංග මහතාගේ සහ මහත්මියගේ දියණිය</span>
+            </div>
           </div>
           <div className="hidden lg:flex justify-start mt-8">
             <Heart className="w-6 h-6 text-brand-sakura/60 fill-brand-sakura/20 transform hover:scale-110 transition-transform cursor-pointer" />

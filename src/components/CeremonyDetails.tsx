@@ -42,8 +42,11 @@ export const CeremonyDetails: React.FC = () => {
                   <Calendar className="w-5 h-5 text-brand-sakura-deep group-hover:scale-110 transition-transform duration-500" />
                 </div>
                 <div>
-                  <h4 className="font-serif text-2xl sm:text-3xl text-stone-800 mb-2 group-hover:text-brand-sakura-deep transition-colors duration-500">Thursday, May 21</h4>
-                  <p className="text-stone-500/80 text-[10px] sm:text-[11px] uppercase tracking-[0.3em] font-bold">The Year Two Thousand Twenty Six</p>
+                  <h4 className="font-serif text-2xl sm:text-3xl text-stone-800 mb-2 group-hover:text-brand-sakura-deep transition-colors duration-500 flex flex-col sm:flex-row sm:items-baseline gap-2">
+                    <span>Thursday, May 21</span>
+                    <span className="text-xl sm:text-2xl font-sinhala">මැයි 21 බ්‍රහස්පතින්දා</span>
+                  </h4>
+                  <p className="text-stone-500/80 text-[10px] sm:text-[11px] uppercase tracking-[0.3em] font-bold">2026</p>
                 </div>
               </div>
 
@@ -53,8 +56,11 @@ export const CeremonyDetails: React.FC = () => {
                   <Clock className="w-5 h-5 text-brand-sakura-deep group-hover:scale-110 transition-transform duration-500" />
                 </div>
                 <div>
-                  <h4 className="font-serif text-2xl sm:text-3xl text-stone-800 mb-2 group-hover:text-brand-sakura-deep transition-colors duration-500">08:15 AM - 04:00 PM</h4>
-                  <p className="text-stone-500/80 text-[10px] sm:text-[11px] uppercase tracking-[0.3em] font-bold">Wedding Ceremony & Reception</p>
+                  <h4 className="font-serif text-2xl sm:text-3xl text-stone-800 mb-2 group-hover:text-brand-sakura-deep transition-colors duration-500 flex flex-col sm:flex-row sm:items-baseline gap-2">
+                    <span>08:15 AM - 04:00 PM</span>
+                    <span className="text-xl sm:text-2xl font-sinhala">පෙ.ව. 08:15 - ප.ව. 04:00</span>
+                  </h4>
+                  <p className="text-stone-500/80 text-[10px] sm:text-[11px] uppercase tracking-[0.3em] font-bold">Wedding Ceremony & Reception | විවාහ මංගලෝත්සවය සහ දිවා භෝජනය</p>
                 </div>
               </div>
 
@@ -64,8 +70,11 @@ export const CeremonyDetails: React.FC = () => {
                   <MapPin className="w-5 h-5 text-brand-sakura-deep group-hover:scale-110 transition-transform duration-500" />
                 </div>
                 <div>
-                  <h4 className="font-serif text-2xl sm:text-3xl text-stone-800 mb-2 group-hover:text-brand-sakura-deep transition-colors duration-500">Pubudu Villa Reception Hall</h4>
-                  <p className="text-stone-500/80 text-[10px] sm:text-[11px] uppercase tracking-[0.3em] font-bold">Piliyandala, Sri Lanka</p>
+                  <h4 className="font-serif text-2xl sm:text-3xl text-stone-800 mb-2 group-hover:text-brand-sakura-deep transition-colors duration-500 flex flex-col sm:flex-row sm:items-baseline gap-2">
+                    <span>Pubudu Villa Reception Hall</span>
+                    <span className="text-xl sm:text-2xl font-sinhala">පුබුදු විලා උත්සව ශාලාව</span>
+                  </h4>
+                  <p className="text-stone-500/80 text-[10px] sm:text-[11px] uppercase tracking-[0.3em] font-bold">Piliyandala, Sri Lanka | පිළියන්දල</p>
                 </div>
               </div>
             </div>
