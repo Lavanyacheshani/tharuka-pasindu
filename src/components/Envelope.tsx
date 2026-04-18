@@ -79,7 +79,7 @@ export const Envelope: React.FC<EnvelopeProps> = ({ onComplete }) => {
                 </div>
 
                 <h2 className="text-3xl sm:text-5xl font-display font-medium text-[#b91c3e] tracking-tight leading-[1.1] mb-2 sm:mb-3 drop-shadow-sm">
-                  Pasindu <br />
+                  Pasidu <br />
                   <span className="text-xl sm:text-3xl text-[#d4af37] italic font-light my-1 block">&</span>
                   Tharuka
                 </h2>
@@ -219,28 +219,45 @@ export const Envelope: React.FC<EnvelopeProps> = ({ onComplete }) => {
           {/* Helper Text below envelop */}
           <AnimatePresence>
             {!isOpened && (
-              <motion.div
-                className="absolute bottom-12 sm:bottom-16 flex flex-col items-center gap-5 z-50 pointer-events-none"
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
-                exit={{ opacity: 0, y: 30 }}
-                transition={{ delay: 2, duration: 1, ease: 'easeOut' }}
-              >
-                <div className="flex flex-col items-center gap-2">
-                  <p className="text-[#fffdf9] font-serif italic text-2xl sm:text-4xl font-light tracking-wide text-shadow-xl drop-shadow-[0_8px_16px_rgba(50,10,20,0.8)]">
-                    Royal Sri Lankan Invitation
-                  </p>
-                  <div>
-                    <p className="text-[#d4af37] font-sans text-[11px] sm:text-sm tracking-[0.3em] uppercase font-bold drop-shadow-md">
+              <>
+                {/* Top Instruction */}
+                <motion.div
+                  className="absolute top-32 sm:top-48 flex flex-col items-center gap-5 z-50 pointer-events-none"
+                  initial={{ opacity: 0, y: -30 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: -30 }}
+                  transition={{ delay: 1, duration: 1, ease: 'easeOut' }}
+                >
+                  <div className="flex flex-col items-center">
+                    <motion.p 
+                      animate={{ opacity: [0.7, 1, 0.7], scale: [1, 1.02, 1] }}
+                      transition={{ duration: 2.5, repeat: Infinity, ease: "easeInOut" }}
+                      className="text-[#d4af37] font-sinhala text-xl sm:text-3xl tracking-wide drop-shadow-[0_2px_10px_rgba(212,175,55,0.4)] mb-1"
+                    >
+                      විවෘත කිරීමට ඔබන්න
+                    </motion.p>
+                    <p className="text-[#d4af37]/60 font-sans text-[10px] sm:text-xs tracking-[0.5em] uppercase font-bold drop-shadow-md">
                       Tap to Open
                     </p>
-                    <p className="text-[#d4af37]/80 font-sinhala text-[13px] sm:text-lg tracking-wide drop-shadow-md">
-                      විවෘත කිරීමට ඔබන්න
+                  </div>
+                </motion.div>
+
+                {/* Bottom Title & Indicator */}
+                <motion.div
+                  className="absolute bottom-12 sm:bottom-16 flex flex-col items-center gap-5 z-50 pointer-events-none"
+                  initial={{ opacity: 0, y: 30 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  exit={{ opacity: 0, y: 30 }}
+                  transition={{ delay: 1.5, duration: 1, ease: 'easeOut' }}
+                >
+                  <div className="flex flex-col items-center gap-2">
+                    <p className="text-[#fffdf9] font-serif italic text-2xl sm:text-4xl font-light tracking-[0.1em] text-shadow-xl drop-shadow-[0_8px_16px_rgba(50,10,20,0.8)]">
+                      Royal Sri Lankan Invitation
                     </p>
                   </div>
-                </div>
-                <div className="w-[1.5px] h-16 sm:h-20 bg-gradient-to-b from-[#d4af37] to-transparent animate-[bounce_2s_infinite] shadow-[0_0_20px_rgba(212,175,55,0.6)]" />
-              </motion.div>
+                  <div className="w-[1.5px] h-16 sm:h-20 bg-gradient-to-t from-[#d4af37] to-transparent animate-[bounce_2s_infinite] shadow-[0_0_20px_rgba(212,175,55,0.6)]" />
+                </motion.div>
+              </>
             )}
           </AnimatePresence>
         </motion.div>

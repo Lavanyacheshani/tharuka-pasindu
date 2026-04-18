@@ -1,1 +1,1 @@
-# pasindu-tharuka
+# pasidu-tharuka
