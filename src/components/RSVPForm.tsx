@@ -15,12 +15,12 @@ export const RSVPForm: React.FC = () => {
     e.preventDefault();
     setStatus('loading');
 
-    const normalizedGuests = parseInt(formData.guests, 10);
+    const guestValue = formData.guests === 'Family' ? 'Family' : parseInt(formData.guests, 10);
 
     try {
       await submitToGoogleSheet('rsvp', {
         fullName: formData.fullName,
-        guests: normalizedGuests,
+        guests: guestValue,
         dietaryNotes: formData.dietaryNotes,
         submittedAt: new Date().toISOString(),
       });
@@ -127,6 +127,7 @@ export const RSVPForm: React.FC = () => {
                       <option value="2">We are coming! (2 Guests)</option>
                       <option value="3">3 Guests</option>
                       <option value="4">4 Guests</option>
+                      <option value="Family">Coming with Family</option>
                     </select>
                     <div className="absolute right-6 top-1/2 -translate-y-1/2 pointer-events-none text-brand-sakura-deep transition-transform duration-300 group-hover:scale-110">
                       <Heart className="w-5 h-5 fill-brand-sakura/30 drop-shadow-sm" />

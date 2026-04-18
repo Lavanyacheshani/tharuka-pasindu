@@ -21,8 +21,8 @@ export const CoupleDetails: React.FC = () => {
             <div className="w-12 sm:w-20 h-[1px] bg-gradient-to-l from-transparent to-brand-sakura-deep/60" />
           </div>
           <h2 className="text-5xl sm:text-7xl font-display text-stone-800 tracking-tight drop-shadow-sm flex flex-col items-center gap-4">
-            <span>Tharuka <span className="italic text-brand-sakura-deep font-light mx-2">&</span> Pasindu</span>
-            <span className="text-3xl sm:text-5xl font-sinhala">තාරුක <span className="italic text-brand-sakura-deep font-light mx-2">&</span> පසිඳු</span>
+            <span>Pasindu <span className="italic text-brand-sakura-deep font-light mx-2">&</span> Tharuka</span>
+            <span className="text-3xl sm:text-5xl font-sinhala">පසිඳු <span className="italic text-brand-sakura-deep font-light mx-2">&</span> තාරුකා</span>
           </h2>
         </motion.div>
       </div>
@@ -44,7 +44,7 @@ export const CoupleDetails: React.FC = () => {
             </h3>
             <div className="text-stone-500/90 font-serif italic text-base sm:text-lg flex flex-col items-center lg:items-end gap-1">
               <span>Son of Mr. Gamage & Miss Gamage</span>
-              <span className="text-sm sm:text-base font-sinhala not-italic">ගමගේ මහතාගේ සහ මහත්මියගේ පුතණුන්</span>
+              <span className="text-sm sm:text-base font-sinhala not-italic">ගමගේ මහතාගේ සහ මහත්මියගේ පුතණුවන්</span>
             </div>
           </div>
           <div className="hidden lg:flex justify-end mt-8">
@@ -53,19 +53,17 @@ export const CoupleDetails: React.FC = () => {
         </motion.div>
 
         {/* Decorative Center (Image removed as requested) */}
-        <motion.div
-          initial={{ opacity: 0, scale: 0.95 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          viewport={{ once: true }}
-          transition={{ duration: 1.2, ease: "easeOut" }}
-          className="relative px-4 sm:px-0 flex-shrink-0 group flex items-center justify-center py-10"
-        >
-          <div className="relative w-40 h-40 flex items-center justify-center">
-            <div className="absolute inset-0 bg-gradient-to-b from-brand-sakura-deep/20 to-transparent rounded-full blur-2xl opacity-60" />
-            <Heart className="w-20 h-20 text-brand-sakura-deep/40 fill-brand-sakura/10 animate-pulse" />
-            <Sparkles className="absolute top-0 left-0 w-8 h-8 text-brand-sakura-deep animate-pulse" />
+          <div className="relative w-48 h-48 sm:w-64 sm:h-64 flex items-center justify-center">
+            <div className="absolute inset-0 bg-gradient-to-b from-brand-sakura/30 to-transparent rounded-full blur-3xl opacity-40 scale-150" />
+            <motion.img 
+              src="/70.png" 
+              alt="Couple Illustration" 
+              className="relative z-10 w-full h-full object-contain drop-shadow-[0_20px_40px_rgba(0,0,0,0.1)]"
+              animate={{ y: [0, -10, 0] }}
+              transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+            />
+            <Sparkles className="absolute top-0 right-0 w-8 h-8 text-brand-sakura-deep animate-pulse" />
           </div>
-        </motion.div>
 
         {/* Bride Details */}
         <motion.div
@@ -79,7 +77,7 @@ export const CoupleDetails: React.FC = () => {
             <span className="text-brand-sakura-deep uppercase tracking-[0.4em] text-[10px] font-bold mb-3 block">The Bride | මනාලිය</span>
             <h3 className="text-4xl sm:text-5xl font-display text-stone-800 mb-2 drop-shadow-sm flex flex-col items-center lg:items-start gap-2">
               <span>Tharuka</span>
-              <span className="text-2xl sm:text-3xl font-sinhala">තාරුක</span>
+              <span className="text-2xl sm:text-3xl font-sinhala">තාරුකා</span>
             </h3>
             <div className="text-stone-500/90 font-serif italic text-base sm:text-lg flex flex-col items-center lg:items-start gap-1">
               <span>Daughter of Mr. Wijethunga & Miss Wijethunga</span>

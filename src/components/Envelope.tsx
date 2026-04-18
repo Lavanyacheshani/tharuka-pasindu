@@ -79,9 +79,9 @@ export const Envelope: React.FC<EnvelopeProps> = ({ onComplete }) => {
                 </div>
 
                 <h2 className="text-3xl sm:text-5xl font-display font-medium text-[#b91c3e] tracking-tight leading-[1.1] mb-2 sm:mb-3 drop-shadow-sm">
-                  Tharuka <br />
+                  Pasindu <br />
                   <span className="text-xl sm:text-3xl text-[#d4af37] italic font-light my-1 block">&</span>
-                  Pasindu
+                  Tharuka
                 </h2>
 
                 <div className="w-16 sm:w-24 h-[2px] bg-gradient-to-r from-transparent via-[#d4af37] to-transparent mx-auto my-3 sm:my-5" />
@@ -199,13 +199,13 @@ export const Envelope: React.FC<EnvelopeProps> = ({ onComplete }) => {
 
                   <div className="relative flex flex-col items-center justify-center translate-y-[-2px]">
                     <span className="text-[#d4af37] font-serif text-3xl sm:text-4xl italic tracking-tighter drop-shadow-[0_2px_4px_rgba(50,0,10,0.9)]">
-                      T
+                      P
                     </span>
                     <span className="text-[#d4af37]/70 font-serif text-sm sm:text-base mx-0.5 font-light drop-shadow-[0_2px_4px_rgba(50,0,10,0.9)] my-[-6px]">
                       &
                     </span>
                     <span className="text-[#d4af37] font-serif text-3xl sm:text-4xl italic tracking-tighter drop-shadow-[0_2px_4px_rgba(50,0,10,0.9)]">
-                      P
+                      T
                     </span>
                   </div>
 
@@ -227,12 +227,17 @@ export const Envelope: React.FC<EnvelopeProps> = ({ onComplete }) => {
                 transition={{ delay: 2, duration: 1, ease: 'easeOut' }}
               >
                 <div className="flex flex-col items-center gap-2">
-                  <p className="text-[#fffdf9] font-serif italic text-2xl sm:text-4xl font-light tracking-wide text-shadow-xl drop-shadow-[0_8px_16px_rgba(50,0,10,0.8)]">
+                  <p className="text-[#fffdf9] font-serif italic text-2xl sm:text-4xl font-light tracking-wide text-shadow-xl drop-shadow-[0_8px_16px_rgba(50,10,20,0.8)]">
                     Royal Sri Lankan Invitation
                   </p>
-                  <p className="text-[#d4af37] font-sans text-[10px] sm:text-xs tracking-[0.5em] uppercase font-bold drop-shadow-md">
-                    Break the seal to reveal
-                  </p>
+                  <div>
+                    <p className="text-[#d4af37] font-sans text-[11px] sm:text-sm tracking-[0.3em] uppercase font-bold drop-shadow-md">
+                      Tap to Open
+                    </p>
+                    <p className="text-[#d4af37]/80 font-sinhala text-[13px] sm:text-lg tracking-wide drop-shadow-md">
+                      විවෘත කිරීමට ඔබන්න
+                    </p>
+                  </div>
                 </div>
                 <div className="w-[1.5px] h-16 sm:h-20 bg-gradient-to-b from-[#d4af37] to-transparent animate-[bounce_2s_infinite] shadow-[0_0_20px_rgba(212,175,55,0.6)]" />
               </motion.div>

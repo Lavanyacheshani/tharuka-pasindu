@@ -13,14 +13,26 @@ export const Hero: React.FC = () => {
   return (
     <div ref={containerRef} className="relative h-screen flex items-center justify-center overflow-hidden bg-brand-ivory/50">
 
-      {/* Background with Elegant Overlay (Image removed as requested) */}
+      {/* Background with Elegant Overlay */}
       <motion.div
-        className="absolute inset-0 z-0 origin-center bg-brand-ivory"
+        className="absolute inset-0 z-0 origin-center"
         style={{ y: y1, scale }}
       >
+        {/* Background Image with Cinematic Finish */}
+        <div 
+          className="absolute inset-0 bg-cover bg-[center_15%] bg-no-repeat transition-all duration-1000 saturate-[0.3] contrast-[0.95] opacity-55"
+          style={{ backgroundImage: "url('/bride_couple.webp')" }}
+        />
+        
+        {/* Cinematic Vignette & Color Grading */}
+        <div className="absolute inset-0 bg-brand-ivory/50 mix-blend-multiply" />
+        
         {/* Soft elegant gradient overlays to ensure text readability & premium feel */}
-        <div className="absolute inset-0 bg-gradient-to-t from-brand-ivory via-brand-ivory/30 to-brand-ivory/50" />
-        <div className="absolute inset-0 bg-gradient-to-b from-brand-sakura/20 via-transparent to-brand-sakura/10 mix-blend-overlay" />
+        <div className="absolute inset-0 bg-gradient-to-t from-brand-ivory via-brand-ivory/60 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-b from-brand-sakura/20 via-transparent to-brand-ivory/70 mix-blend-overlay" />
+        
+        {/* Radial inner glow for focusing content */}
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_20%,rgba(255,253,249,0.5)_100%)]" />
       </motion.div>
 
       {/* Persistent subtle falling petals in background */}
@@ -47,7 +59,7 @@ export const Hero: React.FC = () => {
           </div>
 
           <span className="text-brand-sakura-deep uppercase tracking-[0.4em] sm:tracking-[0.6em] text-xs sm:text-sm font-medium mb-6 sm:mb-10 block drop-shadow-sm font-sans">
-            The Celebration of Love | ආදරණීය විවාහ මංගලෝත්සවය
+            The Celebration of Love | ආදරණීය විවාහ මංගල උත්සවය
           </span>
 
           <div className="relative mb-8 sm:mb-12 w-full flex justify-center">
@@ -56,12 +68,12 @@ export const Hero: React.FC = () => {
 
             <h1 className="relative text-6xl sm:text-[7rem] lg:text-[9.5rem] font-display text-stone-800 leading-[1.1] sm:leading-[0.9] drop-shadow-sm flex flex-col items-center">
               <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-6">
-                 <span>Tharuka</span>
-                 <span className="text-brand-sakura-deep italic font-light text-5xl sm:text-[6rem] lg:text-[8rem] inline-block">&</span>
                  <span>Pasindu</span>
+                 <span className="text-brand-sakura-deep italic font-light text-5xl sm:text-[6rem] lg:text-[8rem] inline-block">&</span>
+                 <span>Tharuka</span>
               </div>
               <div className="text-3xl sm:text-5xl lg:text-6xl font-sinhala text-stone-800 tracking-tight mt-4 sm:mt-8">
-                තාරුක <span className="text-brand-sakura-deep italic font-light mx-2">&</span> පසිඳු
+                පසිඳු <span className="text-brand-sakura-deep italic font-light mx-2">&</span> තාරුකා
               </div>
             </h1>
           </div>
@@ -73,7 +85,7 @@ export const Hero: React.FC = () => {
                 Together with our families, we joyfully invite you to join us
               </p>
               <p className="text-lg sm:text-xl font-sinhala text-stone-600 leading-relaxed">
-                අපගේ පවුල් වල සාමාජිකයින් සමඟ එක්ව, අපගේ විවාහ මංගලෝත්සවය සඳහා අප ඔබව මහත් ප්‍රීතියෙන් යුතුව පිළිගන්නෙමු.
+                අපගේ පවුල් වල සාමාජිකයින් සමඟ එක්ව, අපගේ විවාහ මංගල උත්සවය සඳහා අප ඔබව මහත් ප්‍රීතියෙන් යුතුව පිළිගන්නෙමු.
               </p>
             </div>
             <div className="hidden sm:block h-[1px] w-20 bg-gradient-to-l from-transparent to-brand-sakura-deep/40" />

@@ -60,7 +60,7 @@ export const CeremonyDetails: React.FC = () => {
                     <span>08:15 AM - 04:00 PM</span>
                     <span className="text-xl sm:text-2xl font-sinhala">පෙ.ව. 08:15 - ප.ව. 04:00</span>
                   </h4>
-                  <p className="text-stone-500/80 text-[10px] sm:text-[11px] uppercase tracking-[0.3em] font-bold">Wedding Ceremony & Reception | විවාහ මංගලෝත්සවය සහ දිවා භෝජනය</p>
+                  <p className="text-stone-500/80 text-[10px] sm:text-[11px] uppercase tracking-[0.3em] font-bold">Wedding Ceremony & Reception | විවාහ මංගල උත්සවය සහ දිවා භෝජනය</p>
                 </div>
               </div>
 
@@ -93,8 +93,14 @@ export const CeremonyDetails: React.FC = () => {
             {/* Artistic Decoration instead of image */}
             <div className="absolute inset-0 bg-gradient-to-br from-brand-sakura/10 via-transparent to-brand-sakura-deep/10" />
             <div className="relative text-center p-12">
-               <Heart className="w-24 h-24 text-brand-sakura/40 fill-brand-sakura/5 mx-auto mb-8 animate-pulse" />
-               <h4 className="font-display text-4xl text-stone-800 mb-4 tracking-tight">The Reception</h4>
+               <motion.img 
+                 src="/50.png" 
+                 alt="Ceremony Illustration" 
+                 className="relative z-10 w-full h-full object-contain drop-shadow-[0_20px_40px_rgba(0,0,0,0.1)]"
+                 animate={{ scale: [1, 1.05, 1] }}
+                 transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
+               />
+               <h4 className="font-display text-4xl text-stone-800 mb-4 tracking-tight mt-6">The Reception</h4>
                <p className="text-stone-500/90 font-serif text-lg leading-relaxed">
                  Followed by a celebratory lunch and festivities at the Pubudu Villa Reception Hall.
                </p>
