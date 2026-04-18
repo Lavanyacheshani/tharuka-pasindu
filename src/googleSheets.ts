@@ -1,4 +1,4 @@
-type SheetName = 'rsvp' | 'wish';
+type SheetName = 'rsvp';
 
 type SheetPayload = Record<string, string | number>;
 

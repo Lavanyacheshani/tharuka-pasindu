@@ -1,7 +1,6 @@
-const SPREADSHEET_ID = '1142ABNJVLxnSH7nUAf68-BjPh5CVTZX2ungN9ZRsHoA';
+const SPREADSHEET_ID = '10ovNdHKxnbndtR-sjIzTsCI1TinEf9-DdmLV3R7aPns';
 const SHEET_NAMES = {
   rsvp: 'rsvp',
-  wish: 'wish',
 };
 
 function doPost(e) {
@@ -10,7 +9,7 @@ function doPost(e) {
     const payloadJson = (e && e.parameter && e.parameter.payload) || '{}';
 
     if (!SHEET_NAMES[sheetKey]) {
-      return jsonResponse({ ok: false, error: 'Invalid sheet name. Use rsvp or wish.' });
+      return jsonResponse({ ok: false, error: 'Invalid sheet name. Use rsvp.' });
     }
 
     const payload = JSON.parse(payloadJson);
@@ -37,7 +36,7 @@ function doGet(e) {
     return jsonResponse({ ok: true, service: 'wedding-forms', timestamp: new Date().toISOString() });
   }
 
-  return jsonResponse({ ok: true, message: 'Use POST with sheet=rsvp|wish and payload=<json>' });
+  return jsonResponse({ ok: true, message: 'Use POST with sheet=rsvp and payload=<json>' });
 }
 
 function ensureHeaders(sheetKey, sheet) {
@@ -49,10 +48,6 @@ function ensureHeaders(sheetKey, sheet) {
     sheet.appendRow(['Timestamp', 'Full Name', 'Guests', 'Dietary Notes', 'Submitted At (ISO)']);
     return;
   }
-
-  if (sheetKey === 'wish') {
-    sheet.appendRow(['Timestamp', 'Name', 'Message', 'Submitted At (ISO)']);
-  }
 }
 
 function buildRow(sheetKey, payload) {
@@ -62,17 +57,8 @@ function buildRow(sheetKey, payload) {
     return [
       now,
       sanitize(payload.fullName),
-      Number(payload.guests || 1),
+      isNaN(payload.guests) ? sanitize(payload.guests) : Number(payload.guests || 1),
       sanitize(payload.dietaryNotes),
-      sanitize(payload.submittedAt),
-    ];
-  }
-
-  if (sheetKey === 'wish') {
-    return [
-      now,
-      sanitize(payload.name),
-      sanitize(payload.message),
       sanitize(payload.submittedAt),
     ];
   }
