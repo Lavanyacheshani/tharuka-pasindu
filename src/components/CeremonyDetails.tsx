@@ -38,43 +38,43 @@ export const CeremonyDetails: React.FC = () => {
 
               {/* Calendar */}
               <div className="relative group">
-                <div className="absolute top-1/2 -translate-y-1/2 -left-[64px] sm:-left-[74px] w-12 h-12 bg-white rounded-full border border-brand-sakura/40 shadow-lg flex items-center justify-center group-hover:border-brand-sakura-deep group-hover:shadow-[0_4px_15px_rgba(251,113,133,0.3)] transition-all duration-500">
+                <div className="absolute top-1/2 -translate-y-1/2 -left-[64px] sm:-left-[74px] w-12 h-12 bg-brand-maroon-light rounded-full border border-brand-sakura/40 shadow-lg flex items-center justify-center group-hover:border-brand-sakura-deep group-hover:shadow-[0_4px_15px_rgba(251,113,133,0.3)] transition-all duration-500">
                   <Calendar className="w-5 h-5 text-brand-sakura-deep group-hover:scale-110 transition-transform duration-500" />
                 </div>
                 <div>
-                  <h4 className="font-serif text-2xl sm:text-3xl text-stone-800 mb-2 group-hover:text-brand-sakura-deep transition-colors duration-500 flex flex-col sm:flex-row sm:items-baseline gap-2">
+                  <h4 className="font-sans text-2xl sm:text-3xl text-stone-800 mb-2 group-hover:text-brand-sakura-deep transition-colors duration-500 flex flex-col sm:flex-row sm:items-baseline gap-2">
                     <span>Thursday, May 21</span>
                     <span className="text-xl sm:text-2xl font-sinhala">මැයි 21 බ්‍රහස්පතින්දා</span>
                   </h4>
-                  <p className="text-stone-500/80 text-[10px] sm:text-[11px] uppercase tracking-[0.3em] font-bold">2026</p>
+                  <p className="text-brand-sakura-deep text-2xl sm:text-3xl uppercase tracking-[0.2em] font-bold mt-1">2026</p>
                 </div>
               </div>
 
               {/* Clock */}
               <div className="relative group">
-                <div className="absolute top-1/2 -translate-y-1/2 -left-[64px] sm:-left-[74px] w-12 h-12 bg-white rounded-full border border-brand-sakura/40 shadow-lg flex items-center justify-center group-hover:border-brand-sakura-deep group-hover:shadow-[0_4px_15px_rgba(251,113,133,0.3)] transition-all duration-500">
+                <div className="absolute top-1/2 -translate-y-1/2 -left-[64px] sm:-left-[74px] w-12 h-12 bg-brand-maroon-light rounded-full border border-brand-sakura/40 shadow-lg flex items-center justify-center group-hover:border-brand-sakura-deep group-hover:shadow-[0_4px_15px_rgba(251,113,133,0.3)] transition-all duration-500">
                   <Clock className="w-5 h-5 text-brand-sakura-deep group-hover:scale-110 transition-transform duration-500" />
                 </div>
                 <div>
-                  <h4 className="font-serif text-2xl sm:text-3xl text-stone-800 mb-2 group-hover:text-brand-sakura-deep transition-colors duration-500 flex flex-col sm:flex-row sm:items-baseline gap-2">
+                  <h4 className="font-sans text-2xl sm:text-3xl text-stone-800 mb-2 group-hover:text-brand-sakura-deep transition-colors duration-500 flex flex-col sm:flex-row sm:items-baseline gap-2">
                     <span>08:15 AM - 04:00 PM</span>
                     <span className="text-xl sm:text-2xl font-sinhala">පෙ.ව. 08:15 - ප.ව. 04:00</span>
                   </h4>
-                  <p className="text-stone-500/80 text-[10px] sm:text-[11px] uppercase tracking-[0.3em] font-bold">Wedding Ceremony & Reception | විවාහ මංගල උත්සවය සහ දිවා භෝජනය</p>
+                  <p className="text-stone-500/80 text-[10px] sm:text-[11px] uppercase font-bold">Wedding Ceremony & Reception | විවාහ මංගල උත්සවය සහ දිවා භෝජනය</p>
                 </div>
               </div>
 
               {/* Location */}
               <div className="relative group">
-                <div className="absolute top-1/2 -translate-y-1/2 -left-[64px] sm:-left-[74px] w-12 h-12 bg-white rounded-full border border-brand-sakura/40 shadow-lg flex items-center justify-center group-hover:border-brand-sakura-deep group-hover:shadow-[0_4px_15px_rgba(251,113,133,0.3)] transition-all duration-500">
+                <div className="absolute top-1/2 -translate-y-1/2 -left-[64px] sm:-left-[74px] w-12 h-12 bg-brand-maroon-light rounded-full border border-brand-sakura/40 shadow-lg flex items-center justify-center group-hover:border-brand-sakura-deep group-hover:shadow-[0_4px_15px_rgba(251,113,133,0.3)] transition-all duration-500">
                   <MapPin className="w-5 h-5 text-brand-sakura-deep group-hover:scale-110 transition-transform duration-500" />
                 </div>
                 <div>
-                  <h4 className="font-serif text-2xl sm:text-3xl text-stone-800 mb-2 group-hover:text-brand-sakura-deep transition-colors duration-500 flex flex-col sm:flex-row sm:items-baseline gap-2">
+                  <h4 className="font-sans text-2xl sm:text-3xl text-stone-800 mb-2 group-hover:text-brand-sakura-deep transition-colors duration-500 flex flex-col sm:flex-row sm:items-baseline gap-2">
                     <span>Pubudu Villa Reception Hall</span>
                     <span className="text-xl sm:text-2xl font-sinhala">පුබුදු විලා උත්සව ශාලාව</span>
                   </h4>
-                  <p className="text-stone-500/80 text-[10px] sm:text-[11px] uppercase tracking-[0.3em] font-bold">Piliyandala, Sri Lanka | පිළියන්දල</p>
+                  <p className="text-stone-500/80 text-[10px] sm:text-[11px] uppercase font-bold">Piliyandala, Sri Lanka | පිළියන්දල</p>
                 </div>
               </div>
             </div>
@@ -88,7 +88,7 @@ export const CeremonyDetails: React.FC = () => {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 1.2, ease: "easeOut" }}
-            className="relative w-full max-w-md aspect-[4/5] flex items-center justify-center bg-white/40 rounded-[3rem] border border-white/60 shadow-xl overflow-hidden"
+            className="relative w-full max-w-md aspect-[4/5] flex items-center justify-center bg-brand-maroon-light/40 rounded-[3rem] border border-brand-off-white/60 shadow-xl overflow-hidden"
           >
             {/* Artistic Decoration instead of image */}
             <div className="absolute inset-0 bg-gradient-to-br from-brand-sakura/10 via-transparent to-brand-sakura-deep/10" />
@@ -106,15 +106,7 @@ export const CeremonyDetails: React.FC = () => {
                </p>
             </div>
 
-            <motion.div
-              initial={{ opacity: 0, x: -30, y: 30 }}
-              whileInView={{ opacity: 1, x: 0, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.6, duration: 1, ease: "easeOut" }}
-              className="absolute -bottom-6 -left-6 bg-white/85 backdrop-blur-xl p-8 shadow-[0_30px_60px_rgba(251,113,133,0.15)] rounded-2xl border border-white"
-            >
-              <span className="text-brand-sakura-deep font-sans font-bold tracking-[0.2em] text-[11px] uppercase block drop-shadow-sm">Since 08:15 AM</span>
-            </motion.div>
+
 
             {/* Decorative Floating Circles */}
             <div className="absolute -top-6 -right-6 w-24 sm:w-32 h-24 sm:w-32 rounded-full border-[1.5px] border-dashed border-brand-sakura/30 animate-[spin_20s_linear_infinite]" />

@@ -9,7 +9,6 @@ import { CeremonyDetails } from './components/CeremonyDetails';
 import { CoupleDetails } from './components/CoupleDetails';
 // Removed Timeline import
 import { Location } from './components/Location';
-import { RSVPForm } from './components/RSVPForm';
 import { Footer } from './components/Footer';
 
 export default function App() {
@@ -91,7 +90,7 @@ export default function App() {
               </div>
             </section>
 
-            <section id="couple" className="py-16 sm:py-32 bg-white">
+            <section id="couple" className="py-16 sm:py-32 bg-brand-maroon-light">
               <CoupleDetails />
             </section>
 
@@ -101,14 +100,11 @@ export default function App() {
 
             {/* Timeline section removed entirely as requested */}
 
-            <section id="location" className="py-16 sm:py-32 bg-white">
+            <section id="location" className="py-16 sm:py-32 bg-brand-maroon-light">
               <Location />
             </section>
 
-            <section id="rsvp" className="py-16 sm:py-32 bg-brand-ivory relative">
-              <div className="absolute top-0 left-0 w-full h-full bg-[url('https://www.transparenttextures.com/patterns/natural-paper.png')] opacity-20 pointer-events-none" />
-              <RSVPForm />
-            </section>
+
 
             <Footer />
           </motion.main>

@@ -210,7 +210,7 @@ export const Envelope: React.FC<EnvelopeProps> = ({ onComplete }) => {
                   </div>
 
                   {/* Realistic Specular Highlight reflecting light */}
-                  <div className="absolute top-1 left-2 w-12 h-6 bg-white/30 rounded-full blur-[4px] -rotate-45 pointer-events-none" />
+                  <div className="absolute top-1 left-2 w-12 h-6 bg-brand-off-white/30 rounded-full blur-[4px] -rotate-45 pointer-events-none" />
                 </motion.button>
               )}
             </AnimatePresence>
@@ -252,7 +252,7 @@ export const Envelope: React.FC<EnvelopeProps> = ({ onComplete }) => {
                 >
                   <div className="flex flex-col items-center gap-2">
                     <p className="text-[#fffdf9] font-serif italic text-2xl sm:text-4xl font-light tracking-[0.1em] text-shadow-xl drop-shadow-[0_8px_16px_rgba(50,10,20,0.8)]">
-                      Royal Sri Lankan Invitation
+                      The Wedding Invitation
                     </p>
                   </div>
                   <div className="w-[1.5px] h-16 sm:h-20 bg-gradient-to-t from-[#d4af37] to-transparent animate-[bounce_2s_infinite] shadow-[0_0_20px_rgba(212,175,55,0.6)]" />

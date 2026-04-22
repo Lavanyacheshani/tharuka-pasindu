@@ -22,7 +22,7 @@ export const Location: React.FC = () => {
           transition={{ duration: 1.2, ease: "easeOut" }}
           className="w-full lg:w-[45%] z-20"
         >
-          <div className="bg-white/90 backdrop-blur-2xl p-10 sm:p-14 lg:p-16 rounded-[2.5rem] shadow-[0_30px_60px_rgba(251,113,133,0.15)] border border-brand-sakura/30 lg:translate-x-12 relative overflow-hidden group">
+          <div className="bg-brand-ivory/90 backdrop-blur-2xl p-10 sm:p-14 lg:p-16 rounded-[2.5rem] shadow-[0_30px_60px_rgba(251,113,133,0.15)] border border-brand-sakura/30 lg:translate-x-12 relative overflow-hidden group">
 
             {/* Elegant top border gradient */}
             <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-brand-champagne via-brand-sakura to-brand-sakura-deep" />
@@ -80,7 +80,7 @@ export const Location: React.FC = () => {
         >
           <div className="absolute -inset-4 sm:-inset-6 border-[2px] border-brand-sakura/30 rounded-[3rem] -z-10 translate-x-2 sm:translate-x-4 translate-y-2 sm:translate-y-4" />
 
-          <div className="w-full h-full rounded-[2.5rem] lg:rounded-[3rem] overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.15)] border-[8px] sm:border-[12px] border-white relative group/map">
+          <div className="w-full h-full rounded-[2.5rem] lg:rounded-[3rem] overflow-hidden shadow-[0_20px_50px_rgba(0,0,0,0.15)] border-[8px] sm:border-[12px] border-brand-off-white relative group/map">
             {/* Map Placeholder Masking for premium feel */}
             <div className="absolute inset-0 bg-brand-sakura/10 mix-blend-multiply pointer-events-none z-20 group-hover/map:opacity-0 transition-opacity duration-1000" />
 
@@ -97,7 +97,7 @@ export const Location: React.FC = () => {
             />
 
             {/* Decorative Location Pin Overlay */}
-            <div className="absolute top-6 right-6 bg-white/90 backdrop-blur-md px-4 py-2 rounded-full border border-brand-sakura/30 shadow-lg flex items-center gap-2 pointer-events-none z-30">
+            <div className="absolute top-6 right-6 bg-brand-ivory/90 backdrop-blur-md px-4 py-2 rounded-full border border-brand-sakura/30 shadow-lg flex items-center gap-2 pointer-events-none z-30">
               <Map className="w-4 h-4 text-brand-sakura-deep animate-pulse" />
               <span className="text-[9px] uppercase tracking-widest font-bold text-stone-600">Live Map</span>
             </div>

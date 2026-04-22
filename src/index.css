@@ -11,10 +11,12 @@
   --color-brand-blush: #cd9c8b;
   --color-brand-sakura: #c37658;
   --color-brand-sakura-deep: #590610;
+  --color-brand-maroon-light: #fdf2f2;
   --color-brand-gold: #707652;
   --color-brand-gold-light: #8e5742;
   --color-brand-champagne: #faf7f2;
-  --color-brand-ivory: #fffdf9;
+  --color-brand-ivory: #fdf8f8;
+  --color-brand-off-white: #fffdf9;
 }
 
 @layer base {
@@ -34,7 +36,7 @@
 
 @layer utilities {
   .glass {
-    @apply bg-white/40 backdrop-blur-md border border-white/20 shadow-xl;
+    @apply bg-brand-off-white/40 backdrop-blur-md border border-brand-off-white/20 shadow-xl;
   }
 
   .text-gradient-sakura {
