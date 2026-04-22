@@ -11,7 +11,7 @@ export const Hero: React.FC = () => {
   const opacity = useTransform(scrollY, [0, 400], [1, 0]);
 
   return (
-    <div ref={containerRef} className="relative h-screen flex items-center justify-center overflow-hidden bg-brand-ivory/50">
+    <div ref={containerRef} className="relative h-screen flex items-center justify-center overflow-hidden bg-brand-off-white/50">
 
       {/* Background with Elegant Overlay */}
       <motion.div
@@ -25,11 +25,11 @@ export const Hero: React.FC = () => {
         />
         
         {/* Cinematic Vignette & Color Grading */}
-        <div className="absolute inset-0 bg-brand-ivory/50 mix-blend-multiply" />
+        <div className="absolute inset-0 bg-brand-off-white/50 mix-blend-multiply" />
         
         {/* Soft elegant gradient overlays to ensure text readability & premium feel */}
-        <div className="absolute inset-0 bg-gradient-to-t from-brand-ivory via-brand-ivory/60 to-transparent" />
-        <div className="absolute inset-0 bg-gradient-to-b from-brand-sakura/20 via-transparent to-brand-ivory/70 mix-blend-overlay" />
+        <div className="absolute inset-0 bg-gradient-to-t from-brand-off-white via-brand-off-white/60 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-b from-brand-sakura/20 via-transparent to-brand-off-white/70 mix-blend-overlay" />
         
         {/* Radial inner glow for focusing content */}
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_20%,rgba(255,253,249,0.5)_100%)]" />

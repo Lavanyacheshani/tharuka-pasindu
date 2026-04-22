@@ -3,7 +3,7 @@ import { Heart } from 'lucide-react';
 
 export const Footer: React.FC = () => {
   return (
-    <footer className="bg-brand-ivory border-t border-brand-sakura/20 pt-24 pb-12 text-center relative overflow-hidden">
+    <footer className="bg-brand-maroon-light border-t border-brand-sakura/20 pt-24 pb-12 text-center relative overflow-hidden">
 
       {/* Soft gradient bottom edge glow */}
       <div className="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-brand-sakura/10 to-transparent pointer-events-none" />

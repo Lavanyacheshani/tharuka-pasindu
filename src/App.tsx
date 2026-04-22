@@ -30,7 +30,7 @@ export default function App() {
   };
 
   return (
-    <div className="relative min-h-screen font-sans selection:bg-brand-gold selection:text-white overflow-x-hidden bg-brand-ivory">
+    <div className="relative min-h-screen font-sans selection:bg-brand-gold selection:text-white overflow-x-hidden bg-brand-off-white">
       <FloatingPetals />
       
       {/* Background Music */}
@@ -64,7 +64,7 @@ export default function App() {
               <Hero />
             </section>
 
-            <section id="countdown" className="py-16 sm:py-32 relative overflow-hidden bg-brand-champagne/30">
+            <section id="countdown" className="py-16 sm:py-32 relative overflow-hidden bg-brand-maroon-light/30">
               {/* Premium Background Ambient Glows */}
               <div className="absolute top-0 left-0 w-full h-full pointer-events-none">
                 <div className="absolute -top-[20%] -right-[10%] w-[50%] h-[70%] bg-brand-sakura/30 blur-[120px] rounded-full" />
@@ -90,17 +90,17 @@ export default function App() {
               </div>
             </section>
 
-            <section id="couple" className="py-16 sm:py-32 bg-brand-maroon-light">
+            <section id="couple" className="py-16 sm:py-32 bg-brand-off-white">
               <CoupleDetails />
             </section>
 
-            <section id="ceremony" className="py-16 sm:py-32 bg-brand-ivory">
+            <section id="ceremony" className="py-16 sm:py-32 bg-brand-maroon-light">
               <CeremonyDetails />
             </section>
 
             {/* Timeline section removed entirely as requested */}
 
-            <section id="location" className="py-16 sm:py-32 bg-brand-maroon-light">
+            <section id="location" className="py-16 sm:py-32 bg-brand-off-white">
               <Location />
             </section>
 

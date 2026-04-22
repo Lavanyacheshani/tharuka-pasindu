@@ -22,7 +22,7 @@ export const Location: React.FC = () => {
           transition={{ duration: 1.2, ease: "easeOut" }}
           className="w-full lg:w-[45%] z-20"
         >
-          <div className="bg-brand-ivory/90 backdrop-blur-2xl p-10 sm:p-14 lg:p-16 rounded-[2.5rem] shadow-[0_30px_60px_rgba(251,113,133,0.15)] border border-brand-sakura/30 lg:translate-x-12 relative overflow-hidden group">
+          <div className="bg-brand-off-white/90 backdrop-blur-2xl p-10 sm:p-14 lg:p-16 rounded-[2.5rem] shadow-[0_30px_60px_rgba(251,113,133,0.15)] border border-brand-sakura/30 lg:translate-x-12 relative overflow-hidden group">
 
             {/* Elegant top border gradient */}
             <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-brand-champagne via-brand-sakura to-brand-sakura-deep" />
@@ -97,7 +97,7 @@ export const Location: React.FC = () => {
             />
 
             {/* Decorative Location Pin Overlay */}
-            <div className="absolute top-6 right-6 bg-brand-ivory/90 backdrop-blur-md px-4 py-2 rounded-full border border-brand-sakura/30 shadow-lg flex items-center gap-2 pointer-events-none z-30">
+            <div className="absolute top-6 right-6 bg-brand-off-white/90 backdrop-blur-md px-4 py-2 rounded-full border border-brand-sakura/30 shadow-lg flex items-center gap-2 pointer-events-none z-30">
               <Map className="w-4 h-4 text-brand-sakura-deep animate-pulse" />
               <span className="text-[9px] uppercase tracking-widest font-bold text-stone-600">Live Map</span>
             </div>

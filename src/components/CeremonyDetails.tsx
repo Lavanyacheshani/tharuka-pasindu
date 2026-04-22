@@ -60,7 +60,7 @@ export const CeremonyDetails: React.FC = () => {
                     <span>08:15 AM - 04:00 PM</span>
                     <span className="text-xl sm:text-2xl font-sinhala">පෙ.ව. 08:15 - ප.ව. 04:00</span>
                   </h4>
-                  <p className="text-stone-500/80 text-[10px] sm:text-[11px] uppercase font-bold">Wedding Ceremony & Reception | විවාහ මංගල උත්සවය සහ දිවා භෝජනය</p>
+                  <p className="text-stone-500/80 text-[10px] sm:text-[11px] uppercase font-bold">Wedding Ceremony & Lunch | විවාහ මංගල උත්සවය සහ දිවා භෝජනය</p>
                 </div>
               </div>
 
@@ -100,7 +100,7 @@ export const CeremonyDetails: React.FC = () => {
                  animate={{ scale: [1, 1.05, 1] }}
                  transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
                />
-               <h4 className="font-display text-4xl text-stone-800 mb-4 tracking-tight mt-6">The Reception</h4>
+               <h4 className="font-display text-4xl text-stone-800 mb-4 tracking-tight mt-6">The Lunch</h4>
                <p className="text-stone-500/90 font-serif text-lg leading-relaxed">
                  Followed by a celebratory lunch and festivities at the Pubudu Villa Reception Hall.
                </p>
