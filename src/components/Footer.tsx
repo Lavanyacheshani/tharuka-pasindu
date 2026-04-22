@@ -17,7 +17,7 @@ export const Footer: React.FC = () => {
           <div className="h-[1px] w-24 sm:w-32 bg-gradient-to-r from-brand-sakura/60 to-transparent" />
         </div>
 
-        <h2 className="text-4xl sm:text-5xl font-display text-stone-800 mb-6 tracking-tight drop-shadow-sm">Pasidu & Tharuka</h2>
+        <h2 className="text-4xl sm:text-5xl font-display text-stone-800 mb-6 tracking-tight drop-shadow-sm">Pasindu & Tharuka</h2>
         <p className="text-stone-500 font-serif italic text-lg sm:text-xl leading-relaxed max-w-2xl mx-auto mb-16">
           "A hundred hearts would be too few to carry all the love we share."
         </p>
@@ -29,7 +29,7 @@ export const Footer: React.FC = () => {
             With all our love 💕
           </div>
           <div className="text-[9px] text-stone-300 tracking-widest uppercase font-medium">
-            © 2026 Pasidu & Tharuka Wedding
+            © 2026 Pasindu & Tharuka Wedding
           </div>
         </div>
       </div>

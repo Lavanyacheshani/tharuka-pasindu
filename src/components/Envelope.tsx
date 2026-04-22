@@ -79,7 +79,7 @@ export const Envelope: React.FC<EnvelopeProps> = ({ onComplete }) => {
                 </div>
 
                 <h2 className="text-3xl sm:text-5xl font-display font-medium text-[#b91c3e] tracking-tight leading-[1.1] mb-2 sm:mb-3 drop-shadow-sm">
-                  Pasidu <br />
+                  Pasindu <br />
                   <span className="text-xl sm:text-3xl text-[#d4af37] italic font-light my-1 block">&</span>
                   Tharuka
                 </h2>

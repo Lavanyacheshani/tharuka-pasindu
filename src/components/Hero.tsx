@@ -68,12 +68,12 @@ export const Hero: React.FC = () => {
 
             <h1 className="relative text-6xl sm:text-[7rem] lg:text-[9.5rem] font-display text-stone-800 leading-[1.1] sm:leading-[0.9] drop-shadow-sm flex flex-col items-center">
               <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-6">
-                 <span>Pasidu</span>
+                 <span>Pasindu</span>
                  <span className="text-brand-sakura-deep italic font-light text-5xl sm:text-[6rem] lg:text-[8rem] inline-block">&</span>
                  <span>Tharuka</span>
               </div>
               <div className="text-3xl sm:text-5xl lg:text-6xl font-sinhala text-stone-800 tracking-tight mt-4 sm:mt-8">
-                පසිදු <span className="text-brand-sakura-deep italic font-light mx-2">&</span> තාරුකා
+                පසිඳු <span className="text-brand-sakura-deep italic font-light mx-2">&</span> තාරුකා
               </div>
             </h1>
           </div>
