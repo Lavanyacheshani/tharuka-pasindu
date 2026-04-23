@@ -28,7 +28,7 @@ export const Footer: React.FC = () => {
           <div className="text-[10px] sm:text-xs text-stone-400 font-bold uppercase tracking-[0.3em]">
             With all our love 💕
           </div>
-          <div className="text-[9px] text-stone-300 tracking-widest uppercase font-medium">
+          <div className="text-[9px] text-stone-500 tracking-widest uppercase font-medium">
             © 2026 Pasindu & Tharuka Wedding
           </div>
         </div>
