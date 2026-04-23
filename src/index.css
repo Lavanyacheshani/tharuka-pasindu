@@ -7,21 +7,23 @@
   --font-display: "Cormorant Garamond", "Noto Serif Sinhalese", serif;
   --font-sinhala: "Noto Serif Sinhalese", serif;
 
+  --color-brand-primary: #c1b1a1;
+  --color-brand-secondary: #340303;
   --color-brand-pink: #fffdf9;
   --color-brand-blush: #cd9c8b;
   --color-brand-sakura: #c37658;
-  --color-brand-sakura-deep: #590610;
-  --color-brand-maroon-light: #ecd0d0;
+  --color-brand-sakura-deep: #340303;
+  --color-brand-maroon-light: #c1b1a1;
   --color-brand-gold: #707652;
   --color-brand-gold-light: #8e5742;
   --color-brand-champagne: #faf7f2;
-  --color-brand-ivory: #f2ebd9;
-  --color-brand-off-white: #f2ebd9;
+  --color-brand-ivory: #c1b1a1;
+  --color-brand-off-white: #c1b1a1;
 }
 
 @layer base {
   body {
-    @apply font-sans bg-brand-ivory text-stone-800 antialiased;
+    @apply font-sans bg-brand-primary text-brand-secondary antialiased;
   }
 
   h1,
@@ -47,16 +49,37 @@
     @apply border border-brand-sakura/30;
   }
 
+  .section-light {
+    @apply bg-brand-primary text-brand-secondary;
+  }
+
+  .section-dark {
+    @apply bg-brand-secondary text-brand-primary;
+  }
+
+  .section-dark .text-brand-secondary {
+    color: var(--color-brand-primary);
+  }
+
+  .section-dark .text-brand-sakura-deep {
+    color: var(--color-brand-primary);
+  }
+
+  .section-dark .bg-brand-maroon-light {
+    background-color: var(--color-brand-primary);
+    opacity: 0.1;
+  }
+
   .perspective-1000 {
     perspective: 1000px;
   }
 }
 
 .wax-seal {
-  background: radial-gradient(circle at 30% 30%, #a01334, #590610, #3a040a);
+  background: radial-gradient(circle at 30% 30%, #4a0404, #340303, #1f0202);
   box-shadow:
-    0 8px 25px rgba(89, 6, 16, 0.4),
-    inset -3px -3px 8px rgba(58, 4, 10, 0.3),
+    0 8px 25px rgba(52, 3, 3, 0.4),
+    inset -3px -3px 8px rgba(31, 2, 2, 0.3),
     inset 3px 3px 8px rgba(255, 255, 255, 0.4);
   border: 1px solid rgba(255, 255, 255, 0.2);
 }

@@ -141,21 +141,21 @@ export const Envelope: React.FC<EnvelopeProps> = ({ onComplete }) => {
               {/* Left Fold */}
               <div className="absolute inset-0 drop-shadow-[10px_0_15px_rgba(60,0,10,0.4)] pointer-events-none">
                 <div className="w-full h-full bg-gradient-to-r from-[#e11d48] to-[#091fa3]/0" style={{ clipPath: 'polygon(0 0, 55% 50%, 0 100%)' }}>
-                   <div className="absolute inset-0 bg-[#e11d48] bg-[url('https://www.transparenttextures.com/patterns/stardust.png')] mix-blend-overlay opacity-40 w-full h-full" style={{ clipPath: 'polygon(0 0, 55% 50%, 0 100%)' }} />
+                  <div className="absolute inset-0 bg-[#e11d48] bg-[url('https://www.transparenttextures.com/patterns/stardust.png')] mix-blend-overlay opacity-40 w-full h-full" style={{ clipPath: 'polygon(0 0, 55% 50%, 0 100%)' }} />
                 </div>
               </div>
 
               {/* Right Fold */}
               <div className="absolute inset-0 drop-shadow-[-10px_0_15px_rgba(60,0,10,0.4)] pointer-events-none">
                 <div className="w-full h-full bg-gradient-to-l from-[#e11d48] to-[#091fa3]/0" style={{ clipPath: 'polygon(100% 0, 45% 50%, 100% 100%)' }}>
-                   <div className="absolute inset-0 bg-[#e11d48] bg-[url('https://www.transparenttextures.com/patterns/stardust.png')] mix-blend-overlay opacity-40 w-full h-full" style={{ clipPath: 'polygon(100% 0, 45% 50%, 100% 100%)' }} />
+                  <div className="absolute inset-0 bg-[#e11d48] bg-[url('https://www.transparenttextures.com/patterns/stardust.png')] mix-blend-overlay opacity-40 w-full h-full" style={{ clipPath: 'polygon(100% 0, 45% 50%, 100% 100%)' }} />
                 </div>
               </div>
 
               {/* Bottom Fold */}
               <div className="absolute inset-0 drop-shadow-[0_-10px_20px_rgba(80,0,20,0.5)] pointer-events-none">
                 <div className="w-full h-full bg-gradient-to-t from-[#c9184a] to-[#9f1239]" style={{ clipPath: 'polygon(0 100%, 50% 45%, 100% 100%)' }}>
-                   <div className="absolute inset-0 bg-[#c9184a] bg-[url('https://www.transparenttextures.com/patterns/stardust.png')] mix-blend-overlay opacity-40 w-full h-full" style={{ clipPath: 'polygon(0 100%, 50% 45%, 100% 100%)' }} />
+                  <div className="absolute inset-0 bg-[#c9184a] bg-[url('https://www.transparenttextures.com/patterns/stardust.png')] mix-blend-overlay opacity-40 w-full h-full" style={{ clipPath: 'polygon(0 100%, 50% 45%, 100% 100%)' }} />
                 </div>
               </div>
             </div>
@@ -229,7 +229,7 @@ export const Envelope: React.FC<EnvelopeProps> = ({ onComplete }) => {
                   transition={{ delay: 1, duration: 1, ease: 'easeOut' }}
                 >
                   <div className="flex flex-col items-center">
-                    <motion.p 
+                    <motion.p
                       animate={{ opacity: [0.7, 1, 0.7], scale: [1, 1.02, 1] }}
                       transition={{ duration: 2.5, repeat: Infinity, ease: "easeInOut" }}
                       className="text-[#d4af37] font-sinhala text-xl sm:text-3xl tracking-wide drop-shadow-[0_2px_10px_rgba(212,175,55,0.4)] mb-1"

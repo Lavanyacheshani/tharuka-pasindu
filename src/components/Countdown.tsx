@@ -55,7 +55,7 @@ export const Countdown: React.FC<CountdownProps> = ({ targetDate }) => {
             {/* Divider line */}
             <div className="w-10 h-[1.5px] bg-gradient-to-r from-transparent via-brand-sakura-deep/50 to-transparent mb-4" />
             {/* Label */}
-            <span className="text-[10px] sm:text-xs uppercase tracking-[0.4em] text-stone-600 font-semibold">{item.label}</span>
+            <span className="text-[10px] sm:text-xs uppercase tracking-[0.4em] text-brand-secondary/80 font-semibold">{item.label}</span>
           </div>
         </motion.div>
       ))}

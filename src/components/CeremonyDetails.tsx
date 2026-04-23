@@ -24,12 +24,12 @@ export const CeremonyDetails: React.FC = () => {
               <div className="w-12 sm:w-20 h-[1px] bg-gradient-to-r from-brand-sakura-deep/60 to-transparent" />
             </div>
 
-            <h2 className="text-5xl sm:text-6xl lg:text-7xl font-display text-stone-800 mb-8 leading-[1.1] drop-shadow-sm">
+            <h2 className="text-5xl sm:text-6xl lg:text-7xl font-display text-brand-secondary mb-8 leading-[1.1] drop-shadow-sm">
               A Celebration of <br />
               <span className="italic font-light text-brand-sakura-deep">Tradition & Love</span>
             </h2>
 
-            <p className="text-stone-500/90 font-serif text-lg sm:text-xl leading-relaxed mb-16 max-w-lg">
+            <p className="text-brand-secondary/70 font-serif text-lg sm:text-xl leading-relaxed mb-16 max-w-lg">
               We are honored to invite you to witness our union as we exchange vows in a traditional Poruwa ceremony, surrounded by the beauty of nature and the warmth of our loved ones.
             </p>
 
@@ -42,7 +42,7 @@ export const CeremonyDetails: React.FC = () => {
                   <Calendar className="w-5 h-5 text-brand-sakura-deep group-hover:scale-110 transition-transform duration-500" />
                 </div>
                 <div>
-                  <h4 className="font-sans text-2xl sm:text-3xl text-stone-800 mb-2 group-hover:text-brand-sakura-deep transition-colors duration-500 flex flex-col sm:flex-row sm:items-baseline gap-2">
+                  <h4 className="font-sans text-2xl sm:text-3xl text-brand-secondary mb-2 group-hover:text-brand-sakura-deep transition-colors duration-500 flex flex-col sm:flex-row sm:items-baseline gap-2">
                     <span>Thursday, May 21</span>
                     <span className="text-xl sm:text-2xl font-sinhala">මැයි 21 බ්‍රහස්පතින්දා</span>
                   </h4>
@@ -56,11 +56,11 @@ export const CeremonyDetails: React.FC = () => {
                   <Clock className="w-5 h-5 text-brand-sakura-deep group-hover:scale-110 transition-transform duration-500" />
                 </div>
                 <div>
-                  <h4 className="font-sans text-2xl sm:text-3xl text-stone-800 mb-2 group-hover:text-brand-sakura-deep transition-colors duration-500 flex flex-col sm:flex-row sm:items-baseline gap-2">
+                  <h4 className="font-sans text-2xl sm:text-3xl text-brand-secondary mb-2 group-hover:text-brand-sakura-deep transition-colors duration-500 flex flex-col sm:flex-row sm:items-baseline gap-2">
                     <span>08:15 AM - 04:00 PM</span>
                     <span className="text-xl sm:text-2xl font-sinhala">පෙ.ව. 08:15 - ප.ව. 04:00</span>
                   </h4>
-                  <p className="text-stone-500/80 text-[10px] sm:text-[11px] uppercase font-bold">Wedding Ceremony & Lunch | විවාහ මංගල උත්සවය සහ දිවා භෝජනය</p>
+                  <p className="text-brand-secondary/70 text-[10px] sm:text-[11px] uppercase font-bold">Wedding Ceremony & Lunch | විවාහ මංගල උත්සවය සහ දිවා භෝජනය</p>
                 </div>
               </div>
 
@@ -70,11 +70,11 @@ export const CeremonyDetails: React.FC = () => {
                   <MapPin className="w-5 h-5 text-brand-sakura-deep group-hover:scale-110 transition-transform duration-500" />
                 </div>
                 <div>
-                  <h4 className="font-sans text-2xl sm:text-3xl text-stone-800 mb-2 group-hover:text-brand-sakura-deep transition-colors duration-500 flex flex-col sm:flex-row sm:items-baseline gap-2">
+                  <h4 className="font-sans text-2xl sm:text-3xl text-brand-secondary mb-2 group-hover:text-brand-sakura-deep transition-colors duration-500 flex flex-col sm:flex-row sm:items-baseline gap-2">
                     <span>Pubudu Villa Reception Hall</span>
                     <span className="text-xl sm:text-2xl font-sinhala">පුබුදු විලා උත්සව ශාලාව</span>
                   </h4>
-                  <p className="text-stone-500/80 text-[10px] sm:text-[11px] uppercase font-bold">Piliyandala, Sri Lanka | පිළියන්දල</p>
+                  <p className="text-brand-secondary/70 text-[10px] sm:text-[11px] uppercase font-bold">Piliyandala, Sri Lanka | පිළියන්දල</p>
                 </div>
               </div>
             </div>
@@ -100,8 +100,8 @@ export const CeremonyDetails: React.FC = () => {
                  animate={{ scale: [1, 1.05, 1] }}
                  transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
                />
-               <h4 className="font-display text-4xl text-stone-800 mb-4 tracking-tight mt-6">The Lunch</h4>
-               <p className="text-stone-500/90 font-serif text-lg leading-relaxed">
+               <h4 className="font-display text-4xl text-brand-secondary mb-4 tracking-tight mt-6">The Lunch</h4>
+               <p className="text-brand-secondary/70 font-serif text-lg leading-relaxed">
                  Followed by a celebratory lunch and festivities at the Pubudu Villa Reception Hall.
                </p>
             </div>

@@ -11,7 +11,7 @@ export const Hero: React.FC = () => {
   const opacity = useTransform(scrollY, [0, 400], [1, 0]);
 
   return (
-    <div ref={containerRef} className="relative h-screen flex items-center justify-center overflow-hidden bg-brand-off-white/50">
+    <div ref={containerRef} className="relative h-screen flex items-center justify-center overflow-hidden bg-brand-primary">
 
       {/* Background with Elegant Overlay */}
       <motion.div
@@ -25,11 +25,11 @@ export const Hero: React.FC = () => {
         />
 
         {/* Cinematic Vignette & Color Grading */}
-        <div className="absolute inset-0 bg-brand-off-white/50 mix-blend-multiply" />
+        <div className="absolute inset-0 bg-brand-primary/50 mix-blend-multiply" />
 
         {/* Soft elegant gradient overlays to ensure text readability & premium feel */}
-        <div className="absolute inset-0 bg-gradient-to-t from-brand-off-white via-brand-off-white/60 to-transparent" />
-        <div className="absolute inset-0 bg-gradient-to-b from-brand-sakura/20 via-transparent to-brand-off-white/70 mix-blend-overlay" />
+        <div className="absolute inset-0 bg-gradient-to-t from-brand-primary via-brand-primary/60 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-b from-brand-sakura/20 via-transparent to-brand-primary/70 mix-blend-overlay" />
 
         {/* Radial inner glow for focusing content */}
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,transparent_20%,rgba(255,253,249,0.5)_100%)]" />
@@ -66,13 +66,13 @@ export const Hero: React.FC = () => {
             {/* Soft glow behind text for contrast and magical feel */}
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[140%] bg-brand-maroon-light/40 blur-[50px] sm:blur-[80px] rounded-full pointer-events-none" />
 
-            <h1 className="relative text-6xl sm:text-[7rem] lg:text-[9.5rem] font-display text-stone-800 leading-[1.1] sm:leading-[0.9] drop-shadow-sm flex flex-col items-center">
+            <h1 className="relative text-6xl sm:text-[7rem] lg:text-[9.5rem] font-display text-brand-secondary leading-[1.1] sm:leading-[0.9] drop-shadow-sm flex flex-col items-center">
               <div className="flex flex-col sm:flex-row items-center gap-2 sm:gap-6">
                 <span>Pasindu</span>
                 <span className="text-brand-sakura-deep italic font-light text-5xl sm:text-[6rem] lg:text-[8rem] inline-block">&</span>
                 <span>Tharuka</span>
               </div>
-              <div className="text-3xl sm:text-5xl lg:text-6xl font-sinhala text-stone-800 tracking-tight mt-4 sm:mt-8">
+              <div className="text-3xl sm:text-5xl lg:text-6xl font-sinhala text-brand-secondary tracking-tight mt-4 sm:mt-8">
                 පසිඳු <span className="text-brand-sakura-deep italic font-light mx-2">&</span> තාරුකා
               </div>
             </h1>
@@ -81,14 +81,14 @@ export const Hero: React.FC = () => {
           <div className="flex flex-col items-center justify-center gap-4 sm:gap-6 mb-12 sm:mb-16">
             <div className="hidden sm:block h-[1px] w-20 bg-gradient-to-r from-transparent to-brand-sakura-deep/40" />
             <div className="px-4 text-center max-w-xl space-y-4">
-              <p className="text-[1.1rem] sm:text-2xl font-serif italic text-stone-700 tracking-wide leading-relaxed drop-shadow-[0_1px_2px_rgba(255,255,255,0.5)]">
+              <p className="text-[1.1rem] sm:text-2xl font-serif italic text-brand-secondary/90 tracking-wide leading-relaxed drop-shadow-[0_1px_2px_rgba(255,255,255,0.5)]">
                 {window.location.pathname.toLowerCase().includes('family')
                   ? "Together with our families, we joyfully invite you and your family to join us"
                   : "Together with our families, we joyfully invite you to join us"}
               </p>
-              <p className="text-lg sm:text-xl font-sinhala text-stone-600 leading-relaxed">
+              <p className="text-lg sm:text-xl font-sinhala text-brand-secondary/80 leading-relaxed">
                 {window.location.pathname.toLowerCase().includes('family')
-                  ? "අපගේ පවුල් වල සාමාජිකයින් සමඟ එක්ව, අපගේ විවාහ මංගල උත්සවය සඳහා අප ඔබ සැවොම මහත් ප්රීතියෙන් යුතුව පිළිගන්නෙමු."
+                  ? "අපගේ පවුල් වල සාමාජිකයින් සමඟ එක්ව, අපගේ විවාහ මංගල උත්සවය සඳහා අප ඔබ සැවොම මහත් ප්‍රීතියෙන් යුතුව පිළිගන්නෙමු."
                   : "අපගේ පවුල් වල සාමාජිකයින් සමඟ එක්ව, අපගේ විවාහ මංගල උත්සවය සඳහා අප ඔබව මහත් ප්‍රීතියෙන් යුතුව ආරාධනා කර සිටිනවා."}
               </p>
             </div>
@@ -99,7 +99,7 @@ export const Hero: React.FC = () => {
           <div className="inline-block relative group mt-4 sm:mt-8 w-full sm:w-auto px-4 sm:px-0">
             <div className="absolute -inset-1 bg-gradient-to-r from-brand-sakura-deep/40 via-brand-sakura/40 to-brand-sakura-deep/40 rounded-full blur-[8px] opacity-70 group-hover:opacity-100 transition duration-1000 group-hover:duration-300 transform group-hover:scale-105" />
             <div className="relative px-4 sm:px-12 py-3 sm:py-5 bg-brand-maroon-light/70 backdrop-blur-lg border border-brand-sakura/50 rounded-full shadow-[0_8px_30px_rgba(251,113,133,0.15)] overflow-hidden whitespace-nowrap flex items-center justify-center">
-              <div className="absolute inset-0 bg-gradient-to-b from-brand-off-white/60 to-transparent pointer-events-none" />
+              <div className="absolute inset-0 bg-gradient-to-b from-brand-primary/60 to-transparent pointer-events-none" />
               <span className="relative text-[16px] sm:text-3xl font-serif text-brand-sakura-deep tracking-[0.2em] sm:tracking-[0.4em] font-medium drop-shadow-sm flex items-center gap-2 sm:gap-3 whitespace-nowrap">
                 <Sparkles className="w-3 h-3 sm:w-4 sm:h-4 text-brand-sakura flex-shrink-0" />
                 21 . 05 . 2026
@@ -135,7 +135,7 @@ export const Hero: React.FC = () => {
         transition={{ delay: 2.5, duration: 1 }}
         whileHover={{ scale: 1.1 }}
       >
-        <span className="text-[9px] sm:text-[10px] font-sans uppercase tracking-[0.4em] text-stone-500 font-semibold drop-shadow-md">Discover</span>
+        <span className="text-[9px] sm:text-[10px] font-sans uppercase tracking-[0.4em] text-brand-secondary/70 font-semibold drop-shadow-md">Discover</span>
         <div className="w-[1px] h-12 sm:h-20 bg-gradient-to-b from-brand-sakura-deep/60 to-transparent animate-bounce" />
       </motion.div>
     </div>

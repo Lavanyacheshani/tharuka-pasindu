@@ -17,7 +17,7 @@ export const Timeline: React.FC = () => {
         <span className="text-brand-sakura-deep uppercase tracking-[0.4em] text-[10px] font-medium mb-4 block">
           The Day's Flow
         </span>
-        <h2 className="text-5xl font-display text-stone-800 tracking-tight">Wedding Timeline</h2>
+        <h2 className="text-5xl font-display text-brand-secondary tracking-tight">Wedding Timeline</h2>
         <div className="w-12 h-px bg-brand-sakura/30 mx-auto mt-6" />
       </div>
 
@@ -49,8 +49,8 @@ export const Timeline: React.FC = () => {
 
               {/* Content */}
               <div className={`flex-1 text-center ${index % 2 === 0 ? 'md:text-left' : 'md:text-right'}`}>
-                <h4 className="text-xl font-display text-stone-800 mb-1">{event.title}</h4>
-                <p className="text-stone-400 text-sm leading-relaxed">{event.desc}</p>
+                <h4 className="text-xl font-display text-brand-secondary mb-1">{event.title}</h4>
+                <p className="text-brand-secondary/60 text-sm leading-relaxed">{event.desc}</p>
               </div>
             </motion.div>
           ))}
